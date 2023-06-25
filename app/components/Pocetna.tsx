@@ -18,7 +18,6 @@ export default function Pocetna() {
       <p className="natpis">Iznajmljivanje kluba</p>
       <p className={`${fugazOne.className} pound`}>P O U N D </p>
       <PocetnaButton />
-      <Onama />
     </div>
   );
 }

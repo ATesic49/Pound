@@ -46,7 +46,9 @@ export default function Navbar() {
             <Link href="/o-nama">Kontakt</Link>
           </li>
         </ul>
-        <div className="navmobilebutton">as</div>
+        <div className="navmobilebutton">
+          <img src="/options.svg" alt="" />
+        </div>
         <ul className="mobile">
           <li>
             <Link href="">Početna</Link>

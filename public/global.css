@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&family=Kablammo&display=swap");
+@import url("./css/usluge.css");
 :root {
   --font-size-small: clamp(8px, 0.7vw, 18px);
   --font-size-mid: clamp(14px, 1.2vw, 25px);
@@ -9,11 +10,10 @@
   --secondary-color: #ffcfa6;
   scroll-behavior: smooth;
   width: 100%;
-  overflow-x: hidden;
 }
 
 * {
-  box-sizing: border-box;
+  box-sizing: content-box;
   margin: 0;
   padding: 0;
 }
@@ -44,10 +44,12 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
+  width: 100% !important;
   height: clamp(45px, 12svh, 90px);
   z-index: 5;
   overflow: hidden;
+  padding: 0;
+  margin: 0;
 }
 .spusten::before {
   position: absolute;
@@ -79,7 +81,7 @@ body {
   padding-top: 0.3rem;
 }
 #navbar .pc {
-  width: clamp(350px, 50%, 650px);
+  width: clamp(150px, 40%, 650px);
   justify-content: space-around;
   margin-right: clamp(20px, 3vh, 40px);
 }
@@ -136,12 +138,27 @@ body {
   display: none;
 }
 #navbar .navmobilebutton {
+  width: clamp(27px, 6.5svh, 60px);
+  z-index: 5 !important;
+  margin-left: 2rem;
+  padding-top: 0.3rem;
+  position: relative;
+  height: clamp(27px, 6.5svh, 60px);
+  margin-right: clamp(20px, 3vh, 40px);
+  cursor: pointer;
   display: none;
+}
+#navbar .navmobilebutton img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 /* NAVBAR MOBILE */
 /* NAVBAR */
 #pocetna {
-  width: 105%;
+  width: 100%;
   position: relative;
   height: 100vh;
   height: 100svh;
@@ -242,15 +259,13 @@ body {
 #pocetna #pocetnaButton p {
   z-index: 2;
 }
-
-#pocetna #o-nama-poc {
+/* O NAMA POC */
+#o-nama-poc {
   min-height: 100svh;
-  padding-top: 100vh;
-  padding-top: 100svh;
   width: 100%;
 }
-#pocetna #o-nama-poc h1 {
-  padding: 20vh 0;
+#o-nama-poc h1 {
+  margin: 20vh 0;
   font-size: var(--font-size-Xlarge);
   margin-inline: auto;
   width: fit-content;
@@ -259,25 +274,25 @@ body {
   background-clip: text;
   filter: drop-shadow(5px -2.5px 0px var(--primary-color));
 }
-#pocetna #o-nama-poc h1::after {
+#o-nama-poc h1::after {
   position: absolute;
-  top: 35%;
-  left: -10%;
+  top: 50%;
+  left: 0%;
   height: 100%;
-  width: 100%;
+  width: 0%;
   content: "~";
-  transform: translate(-50%, 0);
+  transform: translate(-300%, -50%);
+  width: fit-content;
 }
-#pocetna #o-nama-poc h1::before {
+#o-nama-poc h1::before {
   position: absolute;
-  top: 35%;
-  left: 110%;
+  top: 50%;
+  left: 100%;
   height: 100%;
-  width: 100%;
   content: "~";
-  transform: translate(-50%, 0);
+  transform: translate(200%, -50%);
 }
-#pocetna #o-nama-poc .ispod {
+#o-nama-poc .ispod {
   min-height: 50vh;
   min-height: 50svh;
   height: auto;
@@ -290,14 +305,14 @@ body {
   padding: 2vh 0 5vh 0;
   flex-wrap: wrap;
 }
-#pocetna #o-nama-poc .ispod .p {
+#o-nama-poc .ispod .p {
   width: 40%;
   min-width: 325px;
   height: 40%;
   font-size: var(--font-size-mid);
   margin-bottom: 10vh;
 }
-#pocetna #o-nama-poc .ispod .img {
+#o-nama-poc .ispod .img {
   width: 35vw;
   margin-bottom: 10vh;
   min-width: 325px;
@@ -305,25 +320,25 @@ body {
   object-fit: cover;
   position: relative;
 }
-#pocetna #o-nama-poc .ispod .img .thecard {
+#o-nama-poc .ispod .img .thecard {
   transform-style: preserve-3d;
   position: absolute;
   width: 100%;
   height: 100%;
   transition: 1s ease;
-  box-shadow: 0 0 2px #273335;
+  box-shadow: 0 0 10px #273335;
 }
-#pocetna #o-nama-poc .ispod .img .thecard:hover {
+#o-nama-poc .ispod .img:hover .thecard {
   transform: rotateY(180deg);
 }
-#pocetna #o-nama-poc .ispod .img img {
+#o-nama-poc .ispod .img img {
   position: absolute;
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
   filter: brightness(1.02);
 }
-#pocetna #o-nama-poc .ispod .img .backface {
+#o-nama-poc .ispod .img .backface {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -335,7 +350,7 @@ body {
   justify-content: center;
   align-items: center;
 }
-#pocetna #o-nama-poc .ispod .img .backface::after {
+#o-nama-poc .ispod .img .backface::after {
   top: 0;
   position: absolute;
   left: 0;
@@ -348,7 +363,7 @@ body {
   object-fit: cover;
   filter: brightness(0.9);
 }
-#pocetna #o-nama-poc .ispod .img .backface .dugme {
+#o-nama-poc .ispod .img .backface .dugme {
   background-color: var(--primary-color);
   border-radius: 10px;
   font-size: var(--font-size-mid);
@@ -358,6 +373,8 @@ body {
   text-align: center;
   z-index: 3;
 }
+/* O NAMA POC */
+
 .link {
   text-decoration: none;
   color: #273335;
@@ -411,7 +428,13 @@ body {
   .pc {
     display: none;
   }
+  .navmobilebutton {
+    display: block;
+    width: 100%;
+    height: 40%;
+  }
 }
+
 /* MEDIA */
 @media only screen and (max-width: 400px) {
   :root {
