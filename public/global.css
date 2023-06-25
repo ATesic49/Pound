@@ -303,7 +303,6 @@ body {
   min-width: 325px;
   height: 40vh;
   object-fit: cover;
-  overflow: hidden;
   position: relative;
 }
 #pocetna #o-nama-poc .ispod .img .thecard {
@@ -312,8 +311,9 @@ body {
   width: 100%;
   height: 100%;
   transition: 1s ease;
+  box-shadow: 0 0 2px #273335;
 }
-#pocetna #o-nama-poc .ispod .img:hover .thecard {
+#pocetna #o-nama-poc .ispod .img .thecard:hover {
   transform: rotateY(180deg);
 }
 #pocetna #o-nama-poc .ispod .img img {
@@ -322,7 +322,6 @@ body {
   height: 100%;
   backface-visibility: hidden;
   filter: brightness(1.02);
-  box-shadow: 0 0 10px black;
 }
 #pocetna #o-nama-poc .ispod .img .backface {
   position: absolute;
@@ -335,7 +334,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 0 0 10px black;
 }
 #pocetna #o-nama-poc .ispod .img .backface::after {
   top: 0;
