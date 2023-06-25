@@ -322,6 +322,7 @@ body {
   height: 100%;
   backface-visibility: hidden;
   filter: brightness(1.02);
+  box-shadow: 0 0 10px black;
 }
 #pocetna #o-nama-poc .ispod .img .backface {
   position: absolute;
@@ -334,6 +335,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  box-shadow: 0 0 10px black;
 }
 #pocetna #o-nama-poc .ispod .img .backface::after {
   top: 0;
