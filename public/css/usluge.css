@@ -1,0 +1,95 @@
+:root {
+  --font-size-small: clamp(8px, 0.7vw, 18px);
+  --font-size-mid: clamp(14px, 1.2vw, 25px);
+  --font-size-large: clamp(18px, 1.75vw, 30px);
+  --font-size-Xlarge: clamp(20px, 3.5vw, 48px);
+  --primary-color: #ff8870;
+  --secondary-color: #ffcfa6;
+  scroll-behavior: smooth;
+  width: 100%;
+}
+#usluge-poc {
+  min-height: 50vh;
+  min-height: 50svh;
+  width: 100%;
+}
+#usluge-poc .h1 {
+  background-color: var(--secondary-color);
+  padding: 20vh 0;
+  position: relative;
+}
+#usluge-poc .h1::after {
+  position: absolute;
+  top: 99%;
+  left: -5%;
+  width: 35%;
+  content: url("/wave.svg");
+}
+#usluge-poc .h1 h1 {
+  font-size: var(--font-size-Xlarge);
+  margin-inline: auto;
+  width: fit-content;
+  position: relative;
+  text-align: center;
+  background-clip: text;
+  filter: drop-shadow(5px -2.5px 0px var(--primary-color));
+}
+#usluge-poc h1::after {
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  height: 100%;
+  width: 0%;
+  content: "~";
+  transform: translate(-300%, -50%);
+  width: fit-content;
+}
+#usluge-poc h1::before {
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  height: 100%;
+  content: "~";
+  transform: translate(200%, -50%);
+}
+#usluge-poc .ispod {
+  margin-block: 10vh;
+  margin-left: 25%;
+  margin-right: 10%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 50vh;
+  min-height: 50svh;
+  width: 65%;
+  position: relative;
+}
+#usluge-poc .ispod h2 {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  font-size: var(--font-size-large);
+  transform: translate(-50%, -50%);
+}
+#usluge-poc .ispod h2 .span {
+  filter: drop-shadow(4px -2px 0px var(--primary-color));
+}
+#usluge-poc .ispod .swiper {
+  width: 20%;
+  padding: 2%;
+}
+#usluge-poc .ispod .swiper .holder {
+  width: 100%;
+}
+#usluge-poc .ispod .swiper .holder img {
+  width: 100%;
+  height: 100%;
+}
+#usluge-poc .ispod .p {
+  min-width: 250px;
+  width: 40%;
+}
+#usluge-poc .ispod .p p {
+  font-size: var(--font-size-mid);
+}
