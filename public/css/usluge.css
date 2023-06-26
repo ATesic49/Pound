@@ -53,9 +53,10 @@
   transform: translate(200%, -50%);
 }
 #usluge-poc .ispod {
-  margin-block: 10vh;
+  margin-block: 25vh;
   margin-left: 25%;
   margin-right: 10%;
+  padding-bottom: 5vh;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -67,7 +68,7 @@
 }
 #usluge-poc .ispod h2 {
   position: absolute;
-  top: 5%;
+  top: -10%;
   left: 50%;
   font-size: var(--font-size-large);
   transform: translate(-50%, -50%);
@@ -92,4 +93,55 @@
 }
 #usluge-poc .ispod .p p {
   font-size: var(--font-size-mid);
+}
+#usluge-poc .ispod .dugme{
+  position: absolute;
+  left: 50%;
+  top:100%;
+  min-width: 75px;
+  width: 12.5%;
+  aspect-ratio: 5/2;
+  transform: translate(-50%,-100%);
+  padding-inline: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: var(--font-size-mid);
+  letter-spacing: 2px;
+  cursor: pointer;
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: var(--primary-color);
+}
+
+#usluge-poc .ispod .dugme::after{
+  position: absolute;
+  content: '';
+  width: 15%;
+  aspect-ratio:1/1 ;
+  top: 150%;
+  left: 50%;
+  border-radius: 50%;
+  background-color: var(--secondary-color);
+  transform: translate(-50%,-50%);
+  z-index: -1;
+}
+#usluge-poc .ispod .dugme:hover::after{
+  cursor: pointer;
+  animation:lepi-mehur .5s ease-in forwards
+}
+@keyframes lepi-mehur {
+0%{
+top: 150%;
+width: 15%;
+}
+40%,65%{
+top: 50%;
+width: 15%;
+}
+100%{
+  width: 110%;
+top: 50%;
+
+}
 }
