@@ -21,9 +21,33 @@ export default function Navbar() {
       };
     });
   });
+  useEffect(() => {
+      const { scrollY } = window;
+      if (scrollY === 0) {
+        return SetStanjeNava("dignut");
+      } else SetStanjeNava("spusten");
+  },[]);
+  const [mobile, SetMobile] = useState("");
 
   return (
     <>
+      <ul className={`mobile ${mobile}`}>
+        <li>
+          <Link href="">Početna</Link>
+        </li>
+        <li>
+          <Link href="/o-nama">O nama</Link>
+        </li>
+        <li>
+          <Link href="/o-nama">Usluge</Link>
+        </li>
+        <li>
+          <Link href="/o-nama">Ostale usluge</Link>
+        </li>
+        <li>
+          <Link href="/o-nama">Kontakt</Link>
+        </li>
+      </ul>
       <div id="navbar" className={`${cairo.className} ${stanjeNava}`}>
         <Link href="/">
           <img src="/logo.svg" alt="logo" className="logo" />
@@ -47,25 +71,15 @@ export default function Navbar() {
           </li>
         </ul>
         <div className="navmobilebutton">
-          <img src="/options.svg" alt="" />
+          <img
+            src="/options.svg"
+            alt="dasdsd"
+            onClick={() => {
+              if (mobile === "oce") SetMobile("nece");
+              else SetMobile("oce");
+            }}
+          />
         </div>
-        <ul className="mobile">
-          <li>
-            <Link href="">Početna</Link>
-          </li>
-          <li>
-            <Link href="/o-nama">O nama</Link>
-          </li>
-          <li>
-            <Link href="/o-nama">Usluge</Link>
-          </li>
-          <li>
-            <Link href="/o-nama">Ostale usluge</Link>
-          </li>
-          <li>
-            <Link href="/o-nama">Kontakt</Link>
-          </li>
-        </ul>
       </div>
     </>
   );

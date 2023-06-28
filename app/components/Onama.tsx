@@ -17,15 +17,25 @@ const montserrat = Montserrat({
 export default function Onama() {
   return (
     <div id="o-nama-poc" className={aboshione.className}>
-      <h1>Najuzbudljiviji provod u Srbiji</h1>
+      <h1>Najuzbudljiviji provod u Beogradu</h1>
       <div className="ispod">
         <div className="p">
-          <p className={montserrat.className}>
-            Dobrodošli u klub Pound - najidealnije mesto za organizaciju Vašeg
-            događaja! Klub Pound savršen je za sve vrste posebnih prilika i
-            zabava. Bilo da planirate korporativno okupljanje, rođendansku
-            proslavu ili neki drugi važan događaj, naš klub pruža neverovatnu
-            atmosferu i fleksibilnost da se prilagodi Vašim potrebama.
+          <p className={aboshione.className}>
+            Dobrodo<span className={montserrat.className}>š</span>li u klub
+            Pound - najidealnije mesto za organizaciju Va
+            <span className={montserrat.className}>š</span>eg doga
+            <span className={montserrat.className}>đ</span>aja! Klub Pound savr
+            <span className={montserrat.className}>š</span>en je za sve vrste
+            posebnih prilika i zabava. Bilo da planirate korporativno
+            okupljanje, ro
+            <span className={montserrat.className}>đ</span>
+            endansku proslavu ili neki drugi va
+            <span className={montserrat.className}>ž</span>an doga
+            <span className={montserrat.className}>đ</span>aj, na
+            <span className={montserrat.className}>š</span> klub pru
+            <span className={montserrat.className}>ž</span>a neverovatnu
+            atmosferu i fleksibilnost da se prilagodi Va
+            <span className={montserrat.className}>š</span>im potrebama.
           </p>
         </div>
         <div className="img">
