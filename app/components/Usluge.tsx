@@ -1,4 +1,4 @@
-import { Aoboshi_One, Montserrat, Nunito, Cairo } from "@next/font/google";
+import { Aoboshi_One, Montserrat, Nunito, Cairo } from "next/font/google";
 import Link from "next/link";
 import React from "react";
 const cairo = Cairo({
@@ -40,8 +40,8 @@ export default function Usluge() {
             mno<span className={montserrat.className}>š</span>tvo neverovatne
             zabave. U<span className={montserrat.className}>ž</span>ivajte u
             neponovljivom iskustvu za Va
-            <span className={montserrat.className}>š</span> poseban dan, dok
-            mi brinemo o svim detaljima.
+            <span className={montserrat.className}>š</span> poseban dan, dok mi
+            brinemo o svim detaljima.
           </p>
         </div>
         <div className="swiper">
@@ -70,8 +70,8 @@ export default function Usluge() {
             <span className={montserrat.className}>ž</span>iti dovoljno mesta za
             ponovno okupljanje s dragim prijateljima. U
             <span className={montserrat.className}>ž</span>ivajte u opu
-            <span className={montserrat.className}>š</span>tenoj
-            atmosferi, smehu i prise
+            <span className={montserrat.className}>š</span>tenoj atmosferi,
+            smehu i prise
             <span className={montserrat.className}>ć</span>anju na zajedni
             <span className={montserrat.className}>č</span>ke trenutke. Neka Va
             <span className={montserrat.className}>š</span>a godi
@@ -94,17 +94,29 @@ export default function Usluge() {
       </div>
       <div className="ispod">
         <h2>
-         Ro<span className={montserrat.className}>đ</span>enje deteta
+          Ro<span className={montserrat.className}>đ</span>enje deteta
           <span className="span">!</span>
         </h2>
         <div className="p">
           <p>
-          Dobrodo<span className={montserrat.className}>š</span>li u na<span className={montserrat.className}>š</span> klub koji vam nudi prostor za proslavu ro<span className={montserrat.className}>đ</span>enja va<span className={montserrat.className}>š</span>eg deteta! Pružamo vam mogućnost da zajedno s porodicom i prijateljima proslavite dolazak prinove. U<span className={montserrat.className}>ž</span>ivajte u intimnoj i toploj atmosferi, dok delite radost i sre<span className={montserrat.className}>ć</span>ne trenutke s voljenima. Neka va<span className={montserrat.className}>š</span>a proslava ro<span className={montserrat.className}>đ</span>enja bude nezaboravna i ispunjena ljubavlju.
+            Dobrodo<span className={montserrat.className}>š</span>li u na
+            <span className={montserrat.className}>š</span> klub koji vam nudi
+            prostor za proslavu ro
+            <span className={montserrat.className}>đ</span>enja va
+            <span className={montserrat.className}>š</span>eg deteta! Pru
+            <span className={montserrat.className}>ž</span>amo vam mogućnost da
+            zajedno s porodicom i prijateljima proslavite dolazak prinove. U
+            <span className={montserrat.className}>ž</span>
+            ivajte u intimnoj i toploj atmosferi, dok delite radost i sre
+            <span className={montserrat.className}>ć</span>ne trenutke s
+            voljenima. Neka va<span className={montserrat.className}>š</span>a
+            proslava ro<span className={montserrat.className}>đ</span>enja bude
+            nezaboravna i ispunjena ljubavlju.
           </p>
         </div>
         <div className="swiper">
           <div className="holder">
-            <img src="/party.svg" alt="" />
+            <img src="/beba.svg" alt="" />
           </div>
         </div>
         <div className={`dugme ${cairo.className}`}>
@@ -113,7 +125,7 @@ export default function Usluge() {
           </Link>
         </div>
       </div>
-      <div className="ispod">
+      {/* <div className="ispod">
         <h2>
           Koktel ve<span className={montserrat.className}>č</span>e
           <span className="span">!</span>
@@ -146,7 +158,7 @@ export default function Usluge() {
             Detaljnije
           </Link>
         </div>
-      </div>
+      </div> */}
       <div className="ispod">
         <h2>
           Korporativni Dogadjaji

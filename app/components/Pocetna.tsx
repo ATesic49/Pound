@@ -15,8 +15,8 @@ export default function Pocetna() {
   return (
     <div id="pocetna" className={lobster.className}>
       <img src="/pocetna.jpeg" className="img" />
-      <p className="natpis">Iznajmljivanje kluba</p>
-      <p className={`${fugazOne.className} pound`}>P O U N D </p>
+      <h1 className="natpis">Iznajmljivanje kluba</h1>
+      <h1 className={`${fugazOne.className} pound`}>P O U N D </h1>
       <PocetnaButton />
     </div>
   );

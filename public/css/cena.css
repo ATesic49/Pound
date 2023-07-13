@@ -1,0 +1,251 @@
+#cena-poc {
+  min-height: 50vh;
+  min-height: 50svh;
+  width: 100%;
+}
+#cena-poc .h1 {
+  padding: 2.5vw 0;
+  position: relative;
+}
+#cena-poc .h1 h1 {
+  font-size: var(--font-size-Xlarge);
+  margin-inline: auto;
+  width: fit-content;
+  position: relative;
+  text-align: center;
+  background-clip: text;
+  /* filter: drop-shadow(5px -2.5px 0px var(--primary-color)); */
+  max-width: 60%;
+}
+#cena-poc h1::after {
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  height: 100%;
+  width: 0%;
+  content: "~";
+  transform: translate(-300%, -50%);
+  width: fit-content;
+}
+#cena-poc h1::before {
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  height: 100%;
+  content: "~";
+  transform: translate(200%, -50%);
+}
+#cena-poc .ispod {
+  width: 100%;
+  padding-block: clamp(10vh, 5vw, 400px);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#cena-poc .ispod .levo {
+  width: 35%;
+  aspect-ratio: 2/1;
+  text-align: center;
+  margin: 5%;
+  max-width: 800px;
+  min-width: 275px;
+  margin-bottom: 20vh;
+  position: relative;
+}
+#cena-poc .ispod .levo p {
+  color: gray;
+  font-style: italic;
+  letter-spacing: 0.05vw;
+  line-height: 150%;
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: var(--font-size-mid);
+}
+#cena-poc .ispod .levo p::after {
+  content: " ,,";
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-style: italic;
+  height: fit-content;
+  width: fit-content;
+  font-size: var(--font-size-Xlarge);
+  transform: translate(-100%, -100%);
+}
+#cena-poc .ispod .levo p::before {
+  content: " ,,";
+  position: absolute;
+  top: 100%;
+  left: 100%;
+  font-style: italic;
+  height: fit-content;
+  width: fit-content;
+  font-size: var(--font-size-Xlarge);
+  transform: translate(-100%, 100%);
+}
+#cena-poc .ispod .desno {
+  display: flex;
+  max-width: 800px;
+  justify-content: space-around;
+  align-items: stretch;
+  width: 50%;
+  min-width: 300px;
+  flex-wrap: wrap;
+}
+#cena-poc .ispod .desno .kartica {
+  box-shadow: 0 0 10px black;
+  border-radius: 1vh;
+  display: flex;
+  min-width: 150px;
+  margin: 2%;
+  width: 35%;
+  min-height: 150px !important;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  background-image: linear-gradient(45deg, #2d4356, #435b66, #a76f6f);
+  flex-wrap: wrap;
+}
+
+#cena-poc .ispod .desno .kartica h2 {
+  font-size: var(--font-size-large);
+  margin-top: 15%;
+  position: relative;
+  text-align: center;
+}
+#cena-poc .ispod .desno .kartica h2::after {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  height: 2px;
+  width: 100%;
+  background-color: var(--secondary-color);
+  content: "";
+  transform: translate(-50%, 50%);
+  animation: grow 5s ease-in infinite;
+}
+/* #cena-poc .ispod .desno .kartica:hover h2 {
+  filter: drop-shadow(3px -1.5px var(--primary-color))
+    drop-shadow(0 0 10px black);
+  color: white;
+} */
+#cena-poc .ispod .desno .kartica .vreme {
+  margin-top: 10%;
+}
+#cena-poc .ispod .desno .kartica .vreme p {
+  font-size: var(--font-size-large);
+  font-style: italic;
+}
+
+#cena-poc .ispod .desno .kartica .cena {
+  margin-top: 20%;
+  margin-bottom: 15%;
+  font-size: var(--font-size-large);
+  font-style: oblique;
+  color: var(--secondary-color);
+  filter: drop-shadow(0 0 5px black);
+}
+
+#cena-poc .ispod .desno .kartica .dugme {
+  margin-bottom: 15%;
+  background-color: var(--secondary-color);
+  padding: 5%;
+  width: 60%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: clamp(0.75vh, 0.25vw, 20px);
+  overflow: hidden;
+  font-size: var(--font-size-small);
+  text-transform: uppercase;
+  letter-spacing: 0.4vw;
+  position: relative;
+}
+#cena-poc .ispod .desno .kartica .dugme a {
+  text-decoration: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: hsl(0, 0%, 0%);
+  z-index: 2;
+}
+#cena-poc .ispod .desno .kartica .dugme:hover {
+  cursor: pointer;
+}
+#cena-poc .ispod .desno .kartica .dugme:hover::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  content: "";
+  background-color: var(--primary-color);
+  animation: left-go 0.75s ease-in forwards;
+}
+@keyframes grow {
+  0%,
+  40% {
+    width: 0;
+  }
+  50%,
+  80% {
+    width: 100%;
+  }
+  100% {
+    width: 0;
+  }
+}
+@keyframes left-go {
+  0% {
+    width: 10%;
+    top: 110%;
+  }
+  10% {
+    width: 10%;
+    top: 50%;
+  }
+  30% {
+    width: 15%;
+    top: 50%;
+  }
+  35% {
+    width: 10%;
+    top: 50%;
+  }
+  40% {
+    width: 15%;
+    top: 50%;
+  }
+  45% {
+    width: 10%;
+    top: 50%;
+  }
+  100% {
+    width: 120%;
+    top: 50%;
+  }
+}
+@media only screen and (max-width: 650px) {
+  /* #cena-poc .h1 h1 {
+    filter: drop-shadow(3px -1.5px 0px var(--primary-color));
+  } */
+  #cena-poc .ispod .desno {
+    width: 100%;
+    margin-top: 2.5vh;
+  }
+  #cena-poc .ispod .levo {
+    width: 80%;
+  }
+
+  #cena-poc .ispod .desno .kartica {
+    width: 27.5%;
+  }
+}

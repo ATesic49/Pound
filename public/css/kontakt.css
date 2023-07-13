@@ -1,0 +1,307 @@
+#kontakt-poc {
+  min-height: 50vh;
+  min-height: 50svh;
+  width: 100%;
+}
+#kontakt-poc .h1 {
+  padding: 10vw 0;
+  position: relative;
+}
+#kontakt-poc .h1 h1 {
+  font-size: var(--font-size-Xlarge);
+  margin-inline: auto;
+  width: fit-content;
+  position: relative;
+  text-align: center;
+  background-clip: text;
+  /* filter: drop-shadow(5px -2.5px 0px var(--primary-color)); */
+  max-width: 60%;
+}
+#kontakt-poc h1::after {
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  height: 100%;
+  width: 0%;
+  content: "~";
+  transform: translate(-300%, -50%);
+  width: fit-content;
+}
+#kontakt-poc h1::before {
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  height: 100%;
+  content: "~";
+  transform: translate(200%, -50%);
+}
+#kontakt-poc .p {
+  margin-block: clamp(5vh, 5vw, 200px);
+  max-width: 60%;
+  margin-inline: auto;
+  text-align: center;
+  word-spacing: 1.1vh;
+}
+#kontakt-poc .p p {
+  font-size: var(--font-size-mid);
+}
+#kontakt-poc .p p a {
+  color: var(--primary-color);
+  line-height: clamp(1vh, 1vw, 30px);
+}
+#kontakt-poc #email {
+  min-height: 25vh;
+  min-height: 25svh;
+  margin-top: clamp(20px, 15vw, 30vh);
+  margin-top: clamp(20px, 15svw, 30svh);
+  width: 100%;
+}
+#kontakt-poc #email .h2 {
+  max-width: 60%;
+  margin-left: 7.5%;
+}
+#kontakt-poc #email .h2 h2 {
+  font-size: var(--font-size-large);
+  padding-bottom: clamp(2px, 4vh, 4.4vw);
+  padding-bottom: clamp(2px, 4svh, 4.4svw);
+}
+#kontakt-poc #email .h2 h2 span {
+  position: relative;
+}
+#kontakt-poc #email .h2 h2 span::after {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 2px;
+  background-color: var(--primary-color);
+  content: "";
+}
+#kontakt-poc #email .ispod {
+  width: 100%;
+}
+#kontakt-poc #email .ispod form {
+  width: 100%;
+}
+#kontakt-poc #email .ispod form .nedugme {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+}
+#kontakt-poc #email .ispod .ime {
+  min-width: 200px;
+  font-size: var(--font-size-mid);
+  width: 30%;
+  padding-inline: 2.5%;
+  margin-block: clamp(0.2vw, 3vh, 5vw);
+  margin-block: clamp(0.2svw, 3svh, 5svw);
+}
+#kontakt-poc #email .ispod .ime p {
+  font-size: var(--font-size-small);
+  color: red;
+}
+#kontakt-poc #email .ispod .ime input {
+  outline: none;
+  width: 100%;
+  padding: clamp(0.5vw, 1vh, 20px);
+  margin-block: 10px;
+
+  border-radius: 0;
+}
+#kontakt-poc #email .ispod .ime input:focus {
+  border-color: var(--primary-color);
+}
+
+#kontakt-poc #email .ispod .ime textarea {
+  outline: none;
+  width: 100%;
+  padding: 2px;
+  margin-block: 10px;
+  min-height: 10vh;
+  min-height: 10svh;
+  border-radius: 0;
+  border: 2px solid #000;
+  border-style: inset;
+  resize: none;
+}
+#kontakt-poc #email .ispod .ime textarea:focus {
+  border-color: var(--primary-color);
+}
+#kontakt-poc #email .ispod form button {
+  padding: 0.5% 1%;
+  background-color: var(--primary-color);
+  border-radius: 2px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  font-size: var(--font-size-mid);
+}
+#kontakt-poc #email .ispod form button:hover {
+  cursor: pointer;
+}
+/* POZOVI NAS */
+/* POZOVI NAS */
+/* POZOVI NAS */
+/* POZOVI NAS */
+/* POZOVI NAS */
+#kontakt-poc #pozovi {
+  margin-top: clamp(20px, 5vw, 30vh);
+  margin-top: clamp(20px, 5svw, 30svh);
+  margin-inline: 7.5%;
+}
+#kontakt-poc #pozovi .h2 {
+  max-width: 60%;
+}
+#kontakt-poc #pozovi .h2 h2 {
+  font-size: var(--font-size-large);
+}
+#kontakt-poc #pozovi .h2 h2 span {
+  position: relative;
+}
+#kontakt-poc #pozovi .h2 h2 span::after {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 2px;
+  background-color: var(--primary-color);
+  content: "";
+}
+#kontakt-poc #pozovi .ispod {
+  width: 100%;
+  margin-top: 5%;
+  height: clamp(15vw, 25vh, 25vw);
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+}
+#kontakt-poc #pozovi .ispod .tel {
+  box-shadow: 0 0 2px #000;
+  background-color: var(--primary-color);
+  position: relative;
+  /* width: 17.5%; */
+  padding: clamp(1vh, 0.75vw, 20px);
+  min-width: fit-content;
+  aspect-ratio: 3.5/1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#kontakt-poc #pozovi .ispod .tel a {
+  text-decoration: none;
+  color: #000;
+  font-size: var(--font-size-mid);
+}
+#kontakt-poc #pozovi .ispod .tel:hover {
+  cursor: pointer;
+}
+#kontakt-poc #pozovi .ispod .icon {
+  width: 25%;
+}
+#kontakt-poc #pozovi .ispod .bezveze {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  align-items: center;
+  margin-right: 25%;
+}
+#kontakt-poc #pozovi .ispod .bezveze .p {
+  width: 100%;
+}
+#kontakt-poc #pozovi .ispod .bezveze .p p {
+  font-size: var(--font-size-mid);
+  text-align: left;
+}
+#kontakt-poc #pozovi .ispod .icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+#kontakt-poc #lokacija {
+  min-height: 25vh;
+  min-height: 25svh;
+  margin-top: clamp(20px, 5vw, 30vh);
+  margin-top: clamp(20px, 5svw, 30svh);
+  width: 85%;
+  margin-inline: 7.5%;
+}
+#kontakt-poc #lokacija .h2 {
+  max-width: 60%;
+}
+#kontakt-poc #lokacija .h2 h2 {
+  font-size: var(--font-size-large);
+}
+#kontakt-poc #lokacija .h2 h2 span {
+  position: relative;
+}
+#kontakt-poc #lokacija .h2 h2 span::after {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 2.5px;
+  background-color: var(--primary-color);
+  content: "";
+}
+#kontakt-poc #lokacija .ispod {
+  width: 100%;
+  margin-top: 5%;
+  box-sizing: border-box;
+}
+#kontakt-poc #lokacija .ispod .maps {
+  width: 80%;
+  margin-inline: auto;
+  aspect-ratio: 5/2;
+}
+#kontakt-poc #lokacija .ispod .maps iframe {
+  width: 100%;
+  height: 100%;
+}
+/* 
+.
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+
+
+
+
+
+ */
+
+@media only screen and (min-width: 800px) {
+  #kontakt-poc #email .ispod form button {
+    margin-left: 90%;
+    transform: translateX(-100%);
+  }
+}
+@media only screen and (max-width: 650px) {
+  /* #kontakt-poc .h1 h1 {
+    filter: drop-shadow(3px -1.5px 0px var(--primary-color));
+  } */
+  #kontakt-poc #lokacija .ispod .maps {
+    aspect-ratio: 5/7;
+  }
+}
