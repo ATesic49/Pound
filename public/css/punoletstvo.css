@@ -8,7 +8,8 @@
   font-style: bold;
 }
 .slidingItem .ispod {
-  margin-top: 5vh;
+  margin-block: 5vh;
+  padding-bottom: 5vh;
   width: 80%;
   margin-inline: auto;
   display: flex;
@@ -110,3 +111,68 @@
   font-size: var(--font-size-mid);
   font-style: bold;
 }
+
+/* DOLE */
+
+.slidingItem .dole {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-block: 5vh;
+  padding-bottom: 5vh;
+}
+.slidingItem .dole .levo {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slidingItem .dole .levo h1 {
+  font-size: var(--font-size-Xlarge);
+}
+.slidingItem .dole .levo span {
+  font-size: var(--font-size-Xlarge);
+  color: rgb(104, 104, 104);
+}
+.slidingItem .dole .desno {
+  min-width: 200px;
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  margin-inline: auto;
+}
+.slidingItem .dole .desno h2 {
+  margin-bottom: 5vh;
+  font-size: var(--font-size-Xlarge);
+}
+.slidingItem .dole .desno .deo {
+  display: flex;
+  justify-content: flex-start;
+
+  gap: 5vh;
+  align-items: center;
+  margin-block: 2vh;
+}
+.slidingItem .dole .desno .deo img {
+  width: 5%;
+  filter: brightness(111) invert(0.5);
+}
+.slidingItem .dole .desno .deo p {
+  font-size: var(--font-size-large);
+  color: rgb(104, 104, 104);
+}
+
+@media screen and (max-width: 400px) {
+  .slidingItem .dole .levo {
+    justify-content: center;
+    margin-inline: auto;
+    margin-block: 5vh;
+  }
+  .slidingItem .dole .desno {
+    margin-left: calc(50vw - 50px);
+    margin-block: 5vh;
+  }
+}
+/* DOLE */

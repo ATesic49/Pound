@@ -350,7 +350,7 @@ body {
     --font-size-small: clamp(6px, 0.7vw, 18px);
     --font-size-mid: clamp(11px, 1.2vw, 25px);
     --font-size-large: clamp(14px, 1.75vw, 30px);
-    --font-size-Xlarge: clamp(16px, 3.5vw, 48px);
+    --font-size-Xlarge: clamp(16px, 7vw, 50px);
   }
   #o-nama-poc .ispod .img,
   #o-nama-poc .ispod .p {

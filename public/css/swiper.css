@@ -38,7 +38,7 @@
   width: 80%;
   margin-inline: auto;
   margin-top: clamp(20px, 10vh, 10vw);
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 7vh 10vh;
 }
 #swiper .ispod .karta {
@@ -80,4 +80,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.swiper-pagination-bullet {
+  background-color: var(--primary-color) !important;
 }

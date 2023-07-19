@@ -37,7 +37,7 @@ export default function Punoletstvo() {
           <img src="/party.svg" alt="" />
         </div>
       </div>
-      <div className="kartice">
+      {/* <div className="kartice">
         <div className="karta">
           <div className="h2">
             <h2>Mali pound</h2>
@@ -90,6 +90,26 @@ export default function Punoletstvo() {
 
           <img src="/svgs/dj.svg" alt="" />
           <div className="cena">600e</div>
+        </div>
+      </div> */}
+      <div className="dole">
+        <div className="levo">
+          <h1>350€ </h1> <span>/noć</span>
+        </div>
+        <div className="desno">
+          <h2>U cenu ulazi</h2>
+          <div className="deo">
+            <img src="/svgs/check.svg" />
+            <p>Barmen</p>
+          </div>
+          <div className="deo">
+            <img src="/svgs/check.svg" />
+            <p>Profesionalni Dj</p>
+          </div>
+          <div className="deo">
+            <img src="/svgs/check.svg" />
+            <p>Obezbedjenje</p>
+          </div>
         </div>
       </div>
     </div>

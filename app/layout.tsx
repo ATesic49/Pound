@@ -24,6 +24,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <link rel="icon" type="image/x-icon" href="/logo.svg" />
       </head>
       <body>

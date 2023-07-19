@@ -1,3 +1,4 @@
+"use client";
 import { Aoboshi_One, Montserrat, Nunito, Cairo } from "next/font/google";
 import Link from "next/link";
 import React from "react";
@@ -29,18 +30,18 @@ export default function Swiperr() {
       </div>
       <div className="ispod">
         <div className="karta">
-          <img src="/svgs/dj.svg" alt="" />
-          <h2>Iznajmljivanje Dj-a</h2>
+          <img src="/svgs/pice.svg" alt="" />
+          <h2>Karta Pića</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
             voluptatem est ratione tenetur ullam porro autem aspernatur cumque
             numquam distinctio?
           </p>
-          <Link href="/cena" className={aboshione.className}>
+
+          <Link href="/karta-pica" className={aboshione.className}>
             Pogledaj Cenu
           </Link>
         </div>
-
         <div className="karta">
           <img src="/svgs/ketering.svg" alt="" />
           <h2>Ketering</h2>
@@ -54,14 +55,44 @@ export default function Swiperr() {
           </Link>
         </div>
         <div className="karta">
-          <img src="/svgs/barmen.svg" alt="" />
-          <h2>Iznajmnjivanje Barmena</h2>
+          <img src="/svgs/muzika.svg" alt="" />
+          <h2>Muzika</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
             voluptatem est ratione tenetur ullam porro autem aspernatur cumque
             numquam distinctio?
           </p>
+          <Link href="/cena" className={aboshione.className}>
+            Pogledaj Cenu
+          </Link>
+        </div>
+        <div className="karta">
+          <img src="/svgs/foto.svg" alt="" />
+          <h2>Profesionalni Forograf</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
+            voluptatem est ratione tenetur ullam porro autem aspernatur cumque
+            numquam distinctio?
+          </p>
+          <Link
+            href="/cena"
+            onClick={(e) => {
+              e.preventDefault();
+            }}
+            className={aboshione.className}
+          >
+            30€
+          </Link>
+        </div>
 
+        <div className="karta">
+          <img src="/svgs/dekoracija.svg" alt="" />
+          <h2>Dekoracija</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
+            voluptatem est ratione tenetur ullam porro autem aspernatur cumque
+            numquam distinctio?
+          </p>
           <Link href="/cena" className={aboshione.className}>
             Pogledaj Cenu
           </Link>

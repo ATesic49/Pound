@@ -44,60 +44,60 @@ export default function Korporativni() {
           <img src="/korporativna.svg" alt="" />
         </div>
       </div>
-      <div className="kartice">
-        <div className="karta">
-          <div className="h2">
-            <h2>Mali pound</h2>
-          </div>
-          <div className="deo">
-            <img src="/svgs/check.svg" alt="" />
-            <div className="p">Barmen</div>
-          </div>
-          <div className="deo">
-            <img src="/svgs/check.svg" alt="" />
-            <div className="p">Profesionalni dj</div>
-          </div>
-          <div className="deo">
-            <img src="/svgs/check.svg" alt="" />
-            <div className="p">Unajmljeno obezbedjenje</div>
-          </div>
-          <div className="deo">
-            <img src="/svgs/cross.svg" alt="" />
-            <div className="p">
-              Neograni<span className={montserrat.className}>č</span>en broj pi
-              <span className={montserrat.className}>ć</span>a
+      {/* <div className="kartice">
+          <div className="karta">
+            <div className="h2">
+              <h2>Mali pound</h2>
             </div>
-          </div>
-          <img src="/svgs/dj.svg" alt="" />
-          <div className="cena">400e</div>
-        </div>
-        <div className="karta">
-          <div className="h2">
-            <h2>Mali pound</h2>
-          </div>
-          <div className="deo">
-            <img src="/svgs/check.svg" alt="" />
-            <div className="p">Barmen</div>
-          </div>
-          <div className="deo">
-            <img src="/svgs/check.svg" alt="" />
-            <div className="p">Profesionalni dj</div>
-          </div>
-          <div className="deo">
-            <img src="/svgs/check.svg" alt="" />
-            <div className="p">Unajmljeno obezbedjenje</div>
-          </div>
-          <div className="deo">
-            <img src="/svgs/check.svg" alt="" />
-            <div className="p">
-              Neograni<span className={montserrat.className}>č</span>en broj pi
-              <span className={montserrat.className}>ć</span>a
+            <div className="deo">
+              <img src="/svgs/check.svg" alt="" />
+              <div className="p">Barmen</div>
             </div>
+            <div className="deo">
+              <img src="/svgs/check.svg" alt="" />
+              <div className="p">Profesionalni dj</div>
+            </div>
+            <div className="deo">
+              <img src="/svgs/check.svg" alt="" />
+              <div className="p">Unajmljeno obezbedjenje</div>
+            </div>
+            <div className="deo">
+              <img src="/svgs/cross.svg" alt="" />
+              <div className="p">
+                Neograni<span className={montserrat.className}>č</span>en broj pi
+                <span className={montserrat.className}>ć</span>a
+              </div>
+            </div>
+            <img src="/svgs/dj.svg" alt="" />
+            <div className="cena">400e</div>
           </div>
-          <img src="/svgs/dj.svg" alt="" />
-          <div className="cena">600e</div>
-        </div>
-      </div>
+          <div className="karta">
+            <div className="h2">
+              <h2>Mali pound</h2>
+            </div>
+            <div className="deo">
+              <img src="/svgs/check.svg" alt="" />
+              <div className="p">Barmen</div>
+            </div>
+            <div className="deo">
+              <img src="/svgs/check.svg" alt="" />
+              <div className="p">Profesionalni dj</div>
+            </div>
+            <div className="deo">
+              <img src="/svgs/check.svg" alt="" />
+              <div className="p">Unajmljeno obezbedjenje</div>
+            </div>
+            <div className="deo">
+              <img src="/svgs/check.svg" alt="" />
+              <div className="p">
+                Neograni<span className={montserrat.className}>č</span>en broj pi
+                <span className={montserrat.className}>ć</span>a
+              </div>
+            </div>
+            <img src="/svgs/dj.svg" alt="" />
+            <div className="cena">600e</div>
+          </div>
+        </div> */}
     </div>
   );
 }

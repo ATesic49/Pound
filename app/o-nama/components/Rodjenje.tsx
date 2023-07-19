@@ -43,7 +43,7 @@ export default function Rodjenje() {
           <img src="/beba.svg" alt="" />
         </div>
       </div>
-      <div className="kartice">
+      {/* <div className="kartice">
         <div className="karta">
           <div className="h2">
             <h2>Mali pound</h2>
@@ -96,7 +96,7 @@ export default function Rodjenje() {
           <img src="/svgs/dj.svg" alt="" />
           <div className="cena">600e</div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }
