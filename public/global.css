@@ -9,6 +9,7 @@
 @import url("/css/slike.css");
 @import url("/css/recenzije.css");
 @import url("/css/swiper.css");
+@import url("/css/toast.css");
 :root {
   --font-size-small: clamp(8px, 0.9vw, 18px);
   --font-size-nav: clamp(10px, 1vw, 20px);

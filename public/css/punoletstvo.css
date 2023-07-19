@@ -1,0 +1,112 @@
+.slidingItem .h1 {
+  max-width: 80%;
+  margin-inline: auto;
+  text-align: center;
+}
+.slidingItem .h1 h1 {
+  font-size: var(--font-size-Xlarge);
+  font-style: bold;
+}
+.slidingItem .ispod {
+  margin-top: 5vh;
+  width: 80%;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.slidingItem .ispod .p {
+  width: 60%;
+  min-width: 250;
+}
+.slidingItem .ispod p {
+  max-width: 90%;
+  text-align: center;
+  font-size: var(--font-size-mid);
+}
+.slidingItem .ispod .img {
+  width: 10%;
+  display: flex;
+  justify-content: center;
+  min-width: 100px;
+  align-items: center;
+}
+.slidingItem .ispod img {
+  width: 100%;
+}
+.slidingItem .kartice {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 0vw 10vw;
+}
+.slidingItem .kartice .karta {
+  box-shadow: 5px 5px 15px var(--primary-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0vh 2.5vw 0 2vw;
+  width: min-content;
+  border-radius: 2.5vh;
+  margin: 7.5vh 2vh 6vh 2vh;
+
+  max-width: 50%;
+}
+.slidingItem .kartice .karta * {
+  padding-block: clamp(2px, 0.3vh, 0.5vw);
+  padding-inline: clamp(4px, 1.4vh, 1vw);
+  margin-block: clamp(2px, 0.3vh, 0.5vw);
+  margin-inline: clamp(4px, 0.3vh, 2vw);
+  box-sizing: content-box;
+}
+.slidingItem .kartice .karta .deo {
+  display: flex;
+  align-items: center;
+  padding: 0 !important;
+  margin-block: 0;
+
+  justify-content: flex-start;
+}
+.slidingItem .kartice .karta .deo img {
+  align-self: left;
+  margin-block: clamp(2px, 1.2vh, 0.5vw);
+  width: 10%;
+}
+.slidingItem .kartice .karta .deo .p * {
+  margin: 0;
+  padding: 0;
+}
+.slidingItem .kartice .karta .deo .p {
+  /* text-align: center;
+  width: 50%; */
+  padding-right: 5%;
+}
+.slidingItem .kartice .karta .h2 {
+  text-align: center;
+}
+.slidingItem .kartice .karta .h2 h2 {
+  min-width: 150px !important;
+  padding-block: 2vh;
+  font-size: var(--font-size-mid);
+  text-align: center !important;
+}
+.slidingItem .kartice .karta img {
+  width: 25%;
+  margin-block: 2vh;
+  object-fit: contain;
+  opacity: 0.6;
+}
+.slidingItem .kartice .karta .cena {
+  border-radius: 1.2vh;
+  padding: 1.5vh 4vh;
+  user-select: none;
+  margin-block: 0.75vh 2.5vh;
+  font-size: var(--font-size-mid);
+  font-style: bold;
+}

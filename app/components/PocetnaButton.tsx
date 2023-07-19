@@ -1,5 +1,5 @@
 "use client";
-import { Cairo } from "next/font/google";
+import { Cairo } from "@next/font/google";
 
 const cairo = Cairo({
   subsets: ["latin"],

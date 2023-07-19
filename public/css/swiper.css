@@ -71,3 +71,13 @@
   background-color: var(--primary-color);
   margin: 2vh 0;
 }
+#swiperONama {
+  width: 100%;
+  padding-top: 20vh;
+}
+#swiperONama .swiper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import { Cairo } from "next/font/google";
+import { Cairo } from "@next/font/google";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 const cairo = Cairo({
@@ -43,7 +43,7 @@ export default function Navbar({ ok }: { ok: string }) {
           <Link href="/usluge">Usluge</Link>
         </li>
         <li>
-          <Link href="/o-nama">Ostale usluge</Link>
+          <Link href="/o-nama">Karta pića</Link>
         </li>
         <li>
           <Link href="/o-nama">Kontakt</Link>
@@ -63,7 +63,7 @@ export default function Navbar({ ok }: { ok: string }) {
             </li>
 
             <li>
-              <Link href="/o-nama">Cena</Link>
+              <Link href="/o-nama">Karta pića</Link>
             </li>
             <li>
               <Link href="/o-nama">Kontakt</Link>
@@ -96,7 +96,7 @@ export default function Navbar({ ok }: { ok: string }) {
             </li>
 
             <li>
-              <Link href="/o-nama">Cena</Link>
+              <Link href="/o-nama">Karta pića</Link>
             </li>
             <li>
               <Link href="/o-nama">Kontakt</Link>

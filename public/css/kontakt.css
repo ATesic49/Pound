@@ -130,15 +130,15 @@
 #kontakt-poc #email .ispod .ime textarea:focus {
   border-color: var(--primary-color);
 }
-#kontakt-poc #email .ispod form button {
+#kontakt-poc #email .ispod button {
   padding: 0.5% 1%;
   background-color: var(--primary-color);
   border-radius: 2px;
-  margin-left: 50%;
+  margin-left: 85%;
   transform: translateX(-50%);
   font-size: var(--font-size-mid);
 }
-#kontakt-poc #email .ispod form button:hover {
+#kontakt-poc #email .ispod button:hover {
   cursor: pointer;
 }
 /* POZOVI NAS */
