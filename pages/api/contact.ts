@@ -10,7 +10,7 @@ export default async function handler(
   res: NextApiResponse
 ) {
   if (req.method === "POST") {
-    const { email, naslov, text, ime } = req.body;
+    const { email, naslov, text, ime, tip, date, broj } = req.body;
     const transporter = nodemailer.createTransport({
       service: "gmail",
       auth: {
@@ -22,8 +22,10 @@ export default async function handler(
       from: email,
       to: "andrijadj96@gmail.com",
       subject: naslov,
-      html: `<h1>${ime}</h1>
+      html: `<h1>${ime} ${tip}</h1>
       <p>${text}</p>
+      <p>${date}</p>
+      <p>${broj} ljudi</p>
       from <a href="mailto:${email}">${email}</a>
       `,
     };

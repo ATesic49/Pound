@@ -39,7 +39,7 @@
   margin-block: clamp(2vh, 2vw, 40px);
   max-width: 60%;
   margin-inline: auto;
-  text-align: center;
+  text-align: left;
   word-spacing: 1.1vh;
 }
 #kontakt-poc .p p {
@@ -103,6 +103,10 @@
   font-size: var(--font-size-small);
   color: red;
 }
+#kontakt-poc #email .ispod .brojg {
+  width: 20% !important;
+  min-width: none !important;
+}
 #kontakt-poc #email .ispod .ime input {
   outline: none;
   width: 100%;
@@ -111,8 +115,23 @@
 
   border-radius: 0;
 }
+#kontakt-poc #email .ispod .ime select {
+  outline: none;
+  width: 100%;
+  padding: clamp(0.5vw, 1vh, 20px);
+  margin-block: 10px;
+  border-style: inset;
+  border-width: 2px;
+  border-radius: 0;
+}
+#kontakt-poc #email .ispod .ime select:focus {
+  border-color: var(--primary-color);
+}
 #kontakt-poc #email .ispod .ime input:focus {
   border-color: var(--primary-color);
+}
+#kontakt-poc #email .ispod .ime input[type="number"] {
+  width: 25%;
 }
 
 #kontakt-poc #email .ispod .ime textarea {

@@ -25,10 +25,15 @@ export default function EmailSender() {
   const [text, SetText] = useState("");
   const [email, SetEmail] = useState("");
   const [naslov, SetNaslov] = useState("");
+  const [broj, SetBroj] = useState("");
+  const [tip, SetTip] = useState("");
+  const [date, SetDate] = useState("");
   const [emailValid, SetEmailValid] = useState("");
   const [naslovValid, SetNaslovValid] = useState("");
   const [imeValid, SetImeValid] = useState("");
   const [textValid, SetTextValid] = useState("");
+  const [dateValid, SetDateValid] = useState("");
+
   const fetchData = async () => {
     try {
       const res = await axios.post("http://localhost:3000/api/contact", {
@@ -36,6 +41,9 @@ export default function EmailSender() {
         naslov,
         text,
         ime,
+        broj,
+        tip,
+        date,
       });
       if (res.data.status === "success") {
         return toast("USPEH");
@@ -128,12 +136,65 @@ export default function EmailSender() {
                 />
                 <p>{textValid}</p>
               </div>
+              <div className="ime">
+                <div className="h3">
+                  <h3>Datum:</h3>
+                </div>
+                <input
+                  name="datum"
+                  type="date"
+                  className={montserrat.className}
+                  onChange={(e) => {
+                    return input(e, SetDate);
+                  }}
+                />
+                <p>{dateValid}</p>
+              </div>
+              <div className="ime brojg">
+                <div className="h3">
+                  <h3>Broj gostiju:</h3>
+                </div>
+                <input
+                  name="gosti"
+                  type="number"
+                  min={1}
+                  max={60}
+                  className={montserrat.className}
+                  onChange={(e) => {
+                    return input(e, SetBroj);
+                  }}
+                />
+              </div>
+              <div className="ime brojg">
+                <div className="h3">
+                  <h3>Tip proslave:</h3>
+                </div>
+                <select
+                  name="proslava"
+                  className={montserrat.className}
+                  onChange={(e) => {
+                    return select(e, SetTip);
+                  }}
+                >
+                  {" "}
+                  <option>18 Rodjendan</option>
+                  <option>Proslava Godisnjice</option>
+                  <option>Rodjenje deteta</option>
+                  <option>Korporativni Dogadjaj</option>
+                </select>
+              </div>
             </div>
           </form>
 
           <button
             className={montserrat.className}
             onClick={(e) => {
+              if (!validator.isDate(date)) {
+                e.preventDefault();
+                SetDateValid("Molimo Vas unesite datum");
+              } else {
+                SetDateValid("");
+              }
               if (!validator.isEmail(email)) {
                 e.preventDefault();
                 SetEmailValid("Unesite pravilan imejl");
@@ -195,6 +256,12 @@ export default function EmailSender() {
 
 function input(
   e: React.ChangeEvent<HTMLInputElement>,
+  parametar: React.Dispatch<React.SetStateAction<string>>
+) {
+  return parametar(e.target.value);
+}
+function select(
+  e: React.ChangeEvent<HTMLSelectElement>,
   parametar: React.Dispatch<React.SetStateAction<string>>
 ) {
   return parametar(e.target.value);

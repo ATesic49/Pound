@@ -29,7 +29,7 @@ export default function Kontakt() {
           Pozdrav!
           <br />
           <br />
-          Veselimo se što ste zainteresirani za naš klub i saradnju sa nama.
+          Veselimo se što ste zainteresovani za naš klub i saradnju sa nama.
           <br />
           <br />
           Za sve informacije i dogovore oko iznajmljivanja našeg prostora,

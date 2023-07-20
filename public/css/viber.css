@@ -1,0 +1,64 @@
+#viber {
+  position: fixed;
+  bottom: 5%;
+  display: flex;
+  flex-direction: column;
+  z-index: 10;
+  right: 2%;
+  width: min-content;
+}
+#viber img {
+  width: 7.5vh;
+}
+#viber img:hover {
+  cursor: pointer;
+}
+#viber .viberr {
+  display: flex;
+  gap: 2.5vh;
+  justify-content: center;
+  position: fixed;
+  bottom: calc(5% + 7.5vh +7.5 / 2vh);
+  display: none;
+  right: 15vh;
+}
+#viber .viberr a {
+  padding: 2vh 3vh;
+  box-shadow: 0 0 10px black;
+  text-decoration: none;
+  color: white;
+  font-size: var(--font-size-mid);
+  background-color: #8f5db7;
+}
+
+#viber .whatsapp {
+  display: flex;
+  gap: 2.5vh;
+  justify-content: center;
+  position: fixed;
+  bottom: 7.5%;
+  transform: translateY(50%);
+  display: none;
+  right: 15vh;
+}
+#viber .whatsapp a {
+  padding: 1.5vh 3vh;
+  box-shadow: 0 0 10px black;
+  text-decoration: none;
+  color: white;
+  font-size: var(--font-size-mid);
+  background-color: #25d366;
+}
+#viber .on,
+#viber .on {
+  display: flex;
+  animation: on 0.125s ease-out forwards;
+}
+@keyframes on {
+  0% {
+    right: -5%;
+  }
+  100% {
+    right: 15vh;
+  }
+}
