@@ -45,9 +45,7 @@ export default function Usluge() {
           </p>
         </div>
         <div className="swiper">
-          <div className="holder">
-            <img src="/party.svg" alt="" />
-          </div>
+          {/* <div className="holder"><img src="/party.svg" alt="" /></div> */}
         </div>
         <div className={`dugme ${cairo.className}`}>
           <Link href="/usluge" className="link">
@@ -82,9 +80,9 @@ export default function Usluge() {
           </p>
         </div>
         <div className="swiper">
-          <div className="holder">
-            <img src="/reunion.svg" alt="" />
-          </div>
+          {/* <div className="holder"> */}
+          {/* <img src="/reunion.svg" alt="" /> */}
+          {/* </div> */}
         </div>
         <div className={`dugme ${cairo.className}`}>
           <Link href="/usluge" className="link">
@@ -115,9 +113,9 @@ export default function Usluge() {
           </p>
         </div>
         <div className="swiper">
-          <div className="holder">
-            <img src="/beba.svg" alt="" />
-          </div>
+          {/* <div className="holder"> */}
+          {/* <img src="/beba.svg" alt="" /> */}
+          {/* </div> */}
         </div>
         <div className={`dugme ${cairo.className}`}>
           <Link href="/usluge" className="link">
@@ -185,9 +183,9 @@ export default function Usluge() {
           </p>
         </div>
         <div className="swiper">
-          <div className="holder">
-            <img src="/korporativna.svg" alt="" />
-          </div>
+          {/* <div className="holder"> */}
+          {/* <img src="/korporativna.svg" alt="" /> */}
+          {/* </div> */}
         </div>
         <div className={`dugme ${cairo.className}`}>
           <Link href="/usluge" className="link">

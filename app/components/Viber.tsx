@@ -17,10 +17,11 @@ export default function VIber() {
         }}
       />
       <div className={`viberr ${klasav}`}>
-        <Link href="viber://contact?number=%2B+381644737375">0644737375</Link>
-        <Link href="viber://contact?number=%2B+381644737375">0644737376</Link>
+        <Link href="viber://contact?number=%2B381644737375">0644737375</Link>
+        <Link href="viber://contact?number=%2B381644737375">0644737376</Link>
       </div>
       <img
+        id="wa"
         src="/svgs/wa.svg"
         alt=""
         onClick={() => {
@@ -29,8 +30,8 @@ export default function VIber() {
         }}
       />
       <div className={`whatsapp ${klasaw}`}>
-        <Link href="https://wa.me/+381644737375">0644737375</Link>
-        <Link href="https://wa.me/+381644737375">0644737375</Link>
+        <Link href="https://wa.me/381644737375">0644737375</Link>
+        <Link href="https://wa.me/381644737375">0644737375</Link>
       </div>
     </div>
   );

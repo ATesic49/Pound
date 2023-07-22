@@ -104,20 +104,25 @@
   color: red;
 }
 #kontakt-poc #email .ispod .brojg {
-  width: 20% !important;
   min-width: none !important;
+  margin-right: auto;
+  margin-left: 7.5%;
 }
 #kontakt-poc #email .ispod .ime input {
+  border: 2px solid #000;
+  border-style: inset;
   outline: none;
   width: 100%;
   padding: clamp(0.5vw, 1vh, 20px);
   margin-block: 10px;
-
+  background-color: white;
   border-radius: 0;
 }
 #kontakt-poc #email .ispod .ime select {
   outline: none;
   width: 100%;
+  background-color: white;
+
   padding: clamp(0.5vw, 1vh, 20px);
   margin-block: 10px;
   border-style: inset;
@@ -137,6 +142,8 @@
 #kontakt-poc #email .ispod .ime textarea {
   outline: none;
   width: 100%;
+  background-color: white;
+
   padding: 2px;
   margin-block: 10px;
   min-height: 10vh;
@@ -150,7 +157,7 @@
   border-color: var(--primary-color);
 }
 #kontakt-poc #email .ispod button {
-  padding: 0.5% 1%;
+  padding: 0.5vw 1vw;
   background-color: var(--primary-color);
   border-radius: 2px;
   margin-left: 85%;

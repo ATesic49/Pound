@@ -26,8 +26,8 @@ export default function EmailSender() {
   const [email, SetEmail] = useState("");
   const [naslov, SetNaslov] = useState("");
   const [broj, SetBroj] = useState("");
-  const [tip, SetTip] = useState("");
-  const [date, SetDate] = useState("");
+  const [tip, SetTip] = useState("18 Rodjendan");
+  const [date, SetDate] = useState("1-1-2024");
   const [emailValid, SetEmailValid] = useState("");
   const [naslovValid, SetNaslovValid] = useState("");
   const [imeValid, SetImeValid] = useState("");
@@ -36,15 +36,19 @@ export default function EmailSender() {
 
   const fetchData = async () => {
     try {
-      const res = await axios.post("http://localhost:3000/api/contact", {
-        email,
-        naslov,
-        text,
-        ime,
-        broj,
-        tip,
-        date,
-      });
+      const res = await axios.post(
+        "http://localhost:3000/api/contact" ||
+          "https://pound-six.vercel.app//api/contact",
+        {
+          email,
+          naslov,
+          text,
+          ime,
+          broj,
+          tip,
+          date,
+        }
+      );
       if (res.data.status === "success") {
         return toast("USPEH");
       } else {
@@ -122,20 +126,7 @@ export default function EmailSender() {
                 />
                 <p>{emailValid}</p>
               </div>
-              <div className="ime">
-                <div className="h3">
-                  <h3>Text:</h3>
-                </div>
-                <textarea
-                  className={montserrat.className}
-                  placeholder="Dobar dan,želeo bih da ..."
-                  onChange={(e) => {
-                    return textArea(e, SetText);
-                  }}
-                  name="text"
-                />
-                <p>{textValid}</p>
-              </div>
+
               <div className="ime">
                 <div className="h3">
                   <h3>Datum:</h3>
@@ -143,29 +134,16 @@ export default function EmailSender() {
                 <input
                   name="datum"
                   type="date"
+                  placeholder="2024-01-01"
                   className={montserrat.className}
                   onChange={(e) => {
+                    console.log(e.target.value);
                     return input(e, SetDate);
                   }}
                 />
                 <p>{dateValid}</p>
               </div>
-              <div className="ime brojg">
-                <div className="h3">
-                  <h3>Broj gostiju:</h3>
-                </div>
-                <input
-                  name="gosti"
-                  type="number"
-                  min={1}
-                  max={60}
-                  className={montserrat.className}
-                  onChange={(e) => {
-                    return input(e, SetBroj);
-                  }}
-                />
-              </div>
-              <div className="ime brojg">
+              <div className="ime">
                 <div className="h3">
                   <h3>Tip proslave:</h3>
                 </div>
@@ -183,12 +161,44 @@ export default function EmailSender() {
                   <option>Korporativni Dogadjaj</option>
                 </select>
               </div>
+              <div className="ime">
+                <div className="h3">
+                  <h3>Text:</h3>
+                </div>
+                <textarea
+                  className={montserrat.className}
+                  placeholder="Dobar dan,želeo bih da ..."
+                  onChange={(e) => {
+                    return textArea(e, SetText);
+                  }}
+                  name="text"
+                />
+                <p>{textValid}</p>
+              </div>
+              <div className="ime brojg ">
+                <div className="h3">
+                  <h3>Broj gostiju:</h3>
+                </div>
+                <input
+                  name="gosti"
+                  type="number"
+                  min={1}
+                  max={60}
+                  className={montserrat.className}
+                  onChange={(e) => {
+                    return input(e, SetBroj);
+                  }}
+                />
+              </div>
             </div>
           </form>
 
           <button
             className={montserrat.className}
             onClick={(e) => {
+              if (typeof broj !== "number") {
+                e.preventDefault();
+              }
               if (!validator.isDate(date)) {
                 e.preventDefault();
                 SetDateValid("Molimo Vas unesite datum");

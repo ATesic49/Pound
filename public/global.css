@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&family=Kablammo&display=swap");
 @import url("./css/usluge.css");
+@import url("./css/uslugee.css");
 @import url("./css/navbar.css");
 @import url("./css/cena.css");
 @import url("./css/kontakt.css");
@@ -11,6 +12,8 @@
 @import url("/css/swiper.css");
 @import url("/css/toast.css");
 @import url("/css/viber.css");
+@import url("/css/karta.css");
+
 :root {
   --font-size-small: clamp(8px, 0.9vw, 18px);
   --font-size-nav: clamp(10px, 1vw, 20px);
@@ -29,6 +32,8 @@
   padding: 0;
 }
 html {
+  margin: 0;
+  padding: 0;
   width: 100%;
 }
 
@@ -330,29 +335,27 @@ body {
   #pocetna img {
     object-fit: center;
   }
-  .pc {
-    display: none;
-  }
+
   .dignut::before,
   .dignut::after {
     display: none;
   }
 
-  .navmobilebutton {
+  /* .navmobilebutton {
     display: block;
     width: 100%;
     height: 40%;
-  }
+  } */
 }
 
 /* MEDIA */
 @media only screen and (max-width: 400px) {
-  :root {
+  /* :root {
     --font-size-small: clamp(6px, 0.7vw, 18px);
     --font-size-mid: clamp(11px, 1.2vw, 25px);
     --font-size-large: clamp(14px, 1.75vw, 30px);
     --font-size-Xlarge: clamp(16px, 7vw, 50px);
-  }
+  } */
   #o-nama-poc .ispod .img,
   #o-nama-poc .ispod .p {
     min-width: 275px;

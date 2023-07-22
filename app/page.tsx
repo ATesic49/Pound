@@ -11,6 +11,7 @@ import Link from "next/link";
 import { Aoboshi_One, Montserrat, Nunito, Cairo } from "@next/font/google";
 import React from "react";
 import Toast from "./components/Toast";
+import Uslugee from "./components/Uslugee";
 const cairo = Cairo({
   weight: ["400"],
   subsets: ["latin"],
@@ -32,8 +33,9 @@ export default function Home() {
     <main>
       <Navbar ok={"da"} />
       <Pocetna />
+      <Uslugee />
       <Onama />
-      <Usluge />
+      {/* <Usluge /> */}
       {/* <Cena /> */}
       <Kontakt />
     </main>

@@ -1,0 +1,46 @@
+#uslugee {
+  margin-block: 10vh;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  width: 80%;
+  margin-inline: auto;
+  gap: 7vh;
+}
+#uslugee a {
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 0.5vh;
+  justify-content: center;
+  display: flex;
+  padding: 2.5vh;
+  flex-direction: column;
+  text-decoration: none;
+  text-align: center;
+  color: #000000;
+  align-items: center;
+}
+#uslugee a:hover {
+  transform: scale(1.05);
+  transition: 0.25s;
+}
+#uslugee a img {
+  width: 12.5vh;
+}
+#uslugee a h2 {
+  font-size: var(--font-size-large);
+  width: min-content;
+}
+
+#uslugeeh1 h1 {
+  font-size: var(--font-size-Xlarge);
+  margin-inline: auto;
+  width: fit-content;
+  position: relative;
+  text-align: center;
+  background-clip: text;
+  /* filter: drop-shadow(5px -2.5px 0px var(--primary-color)); */
+  max-width: 60%;
+}
+#uslugeeh1 {
+  padding: 10vh 0;
+  position: relative;
+}

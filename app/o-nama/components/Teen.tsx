@@ -13,37 +13,29 @@ const montserrat = Montserrat({
   subsets: ["latin"],
   weight: ["600", "700"],
 });
-export default function Godisnjica() {
+export default function Teen() {
   return (
-    <div id="godisnjica" className={`${aboshione.className} slidingItem`}>
+    <div id="Teen" className={`${aboshione.className} slidingItem`}>
       <div className="h1">
-        <h1>
-          Proslava godi<span className={montserrat.className}>š</span>njice
-        </h1>
+        <h1 className={montserrat.className}>Tinejdzerska proslava</h1>
       </div>
       <div className="ispod">
         <div className="p">
-          <p>
-            Vratite se u vreme se<span className={montserrat.className}>ć</span>
-            anja na neverovatnu godi
-            <span className={montserrat.className}>š</span>njicu mature! Obe
-            <span className={montserrat.className}>ć</span>avamo Vam prostor
-            koji <span className={montserrat.className}>ć</span>e Vam pru
-            <span className={montserrat.className}>ž</span>iti dovoljno mesta za
-            ponovno okupljanje s dragim prijateljima. U
-            <span className={montserrat.className}>ž</span>ivajte u opu
-            <span className={montserrat.className}>š</span>tenoj atmosferi,
-            smehu i prise
-            <span className={montserrat.className}>ć</span>anju na zajedni
-            <span className={montserrat.className}>č</span>ke trenutke. Neka Va
-            <span className={montserrat.className}>š</span>a godi
-            <span className={montserrat.className}>š</span>njica bude
-            nezaboravno iskustvo koje
-            <span className={montserrat.className}>ć</span>e Vam obnoviti veze i
-            stvoriti nove uspomene.
+          <p className={montserrat.className}>
+            Učinite svoju tinejdžersku proslavu nezaboravnom u našem klubu! Uz
+            vrhunske DJ-e, barmene i obezbedjenje, Vaša proslava će biti pun
+            pogodak.
+            <br />
+            Prostor je prilagođen vašim željama,zahtevima i novčaniku. Uživajte
+            u ludoj i zabavnoj atmosferi, dok naša stručna ekipa vodi brigu o
+            svim detaljima.
+            <br />
+            Ne propustite priliku stvoriti nezaboravne uspomene s prijateljima.
+            Rezervišite svoj termin danas i doživite nevjerovatnu proslavu u
+            klubu "Pound"!
           </p>
         </div>
-        <div className="img">{/* <img src="/reunion.svg" alt="" /> */}</div>
+        <div className="img">{/* <img src="/beba.svg" alt="" /> */}</div>
       </div>
       {/* <div className="kartice">
         <div className="karta">

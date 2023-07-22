@@ -8,7 +8,7 @@
   height: clamp(45px, 12vh, 90px);
   height: clamp(45px, 12svh, 90px);
   z-index: 5;
-  overflow: hidden;
+  /* overflow: hidden; */
   padding: 0;
   margin: 0;
 }
@@ -44,7 +44,7 @@
   padding-top: 0.3rem;
 }
 #navbar .pc {
-  width: clamp(400px, 40%, 650px);
+  width: clamp(400px, 60%, 850px);
   justify-content: space-around;
   margin-right: clamp(20px, 3vh, 40px);
 }
@@ -62,6 +62,40 @@
   text-align: center;
   padding-inline: 1vw;
 }
+
+/* PADAJUCI */
+#navbar .pc li a img {
+  width: var(--font-size-mid);
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  filter: invert(1);
+  transform: translateY(-50%);
+}
+#navbar .pc li a .padajuci {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  padding: 2vh;
+  width: max-content;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #273335;
+  color: white;
+}
+#navbar .pc li a .ima {
+  display: flex;
+  opacity: 1;
+  transition: 0.5s;
+}
+#navbar .pc li a .nema {
+  display: flex;
+  opacity: 0;
+  animation: none 0.01s 0.5s forwards;
+}
+/* PADAJUCI */
+
 #navbar .pc li:nth-child(5) a {
   box-shadow: 0 0 10px black;
   filter: blur(10.4);
@@ -166,12 +200,11 @@
 }
 
 @media only screen and (max-width: 600px) {
-  .pc {
-    display: none;
-  }
-
-  #navbar .navmobilebutton {
+  /* #navbar .navmobilebutton {
     display: block !important;
+  } */
+  #navbar ul li a {
+    font-size: var(--font-size-small) !important;
   }
   .spusten::before {
     animation: none;
@@ -192,5 +225,13 @@
   }
   100% {
     transform: translateX(-100%);
+  }
+}
+@keyframes none {
+  0% {
+    display: flex;
+  }
+  100% {
+    display: none;
   }
 }

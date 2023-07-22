@@ -33,9 +33,7 @@ export default function Punoletstvo() {
             brinemo o svim detaljima.
           </p>
         </div>
-        <div className="img">
-          <img src="/party.svg" alt="" />
-        </div>
+        <div className="img">{/* <img src="/party.svg" alt="" /> */}</div>
       </div>
       {/* <div className="kartice">
         <div className="karta">
@@ -94,7 +92,9 @@ export default function Punoletstvo() {
       </div> */}
       <div className="dole">
         <div className="levo">
-          <h1>350€ </h1> <span>/noć</span>
+          {/* <h1>350€ </h1> <span>/noć</span> */}
+          <img src="/svgs/handshake.svg" alt="" />
+          <h2>Cena po dogovoru</h2>
         </div>
         <div className="desno">
           <h2>U cenu ulazi</h2>

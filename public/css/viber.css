@@ -10,6 +10,9 @@
 #viber img {
   width: 7.5vh;
 }
+#viber #wa {
+  transform: scale(0.8);
+}
 #viber img:hover {
   cursor: pointer;
 }

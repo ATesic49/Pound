@@ -9,6 +9,7 @@ import Korporativni from "./Korporativni";
 import Punoletstvo from "./Punoletstvo";
 import Rodjenje from "./Rodjenje";
 import "swiper/css/pagination";
+import Teen from "./Teen";
 export default function SwiperOnama() {
   return (
     <div id="swiperONama">
@@ -44,7 +45,12 @@ export default function SwiperOnama() {
         >
           <Korporativni />
         </SwiperSlide>
-        ....
+        <SwiperSlide
+          className="swiperSlide
+        "
+        >
+          <Teen />
+        </SwiperSlide>
       </Swiper>
     </div>
   );

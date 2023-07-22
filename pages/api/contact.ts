@@ -33,10 +33,40 @@ export default async function handler(
       from: "andrijadj96@gmail.com",
       to: email,
       subject: naslov,
-      html: `<h1>Poštovani, primili smo vašu poruku</h1>
-      <p>Poštovani, želimo da Vas obavestimo da smo primili Vašu poruku i da ćemo u najkraćem
-      mogućem roku odgovoriti na nju</p>
-      <h2>Srdačno, Vaš Pound </h2>
+      html: `  <body style="background-color: #ffcfa6; width: 100%">
+      <h1
+        id="pound"
+        style="
+          font-size: 10vh;
+          top: 5%;
+          left: 50%;
+          transform: translateX(-50%);
+          position: absolute;
+          margin: 0;
+          margin-bottom: 5%;
+          letter-spacing: 1vw;
+          filter: drop-shadow(0.4vw -0.4vw 0px #ff8870);
+        "
+      >
+        POUND
+      </h1>
+      <img src="../../public/logo.svg" alt="" id="logo" />
+      <h1
+        style="
+          width: 50%;
+          text-align: center;
+  
+          margin-block: 15% 2.5%;
+        "
+      >
+        Po<span>š</span>tovani,
+      </h1>
+      <p>
+        Primili smo va<span>š</span>u poruku, i <span>ž</span>elimo da vas
+        obavestimo da <span>ć</span>emo u najkra<span>ć</span>em roku da
+        odgovorimo na nju!
+      </p>
+    </body> 
       `,
     };
     try {

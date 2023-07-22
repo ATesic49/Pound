@@ -14,7 +14,7 @@
 }
 #usluge-poc .h1 {
   background-color: var(--secondary-color);
-  padding: 10vw 0;
+  padding: 10vh 0;
   position: relative;
 }
 #usluge-poc .h1::after {
@@ -94,7 +94,7 @@
 }
 #usluge-poc .ispod .p {
   min-width: 250px;
-  width: 40%;
+  width: 80%;
   margin: auto;
 }
 
@@ -104,11 +104,11 @@
 
 #usluge-poc .ispod .dugme {
   position: relative;
-  margin-left: 50%;
+  margin-right: 50%;
   min-width: 75px;
   width: 12.5%;
   aspect-ratio: 5/2;
-  transform: translate(-50%, clamp(0.5vh, 0vw, 100px));
+  transform: translate(50%, clamp(0.5vh, 0vw, 100px));
   padding-inline: 5px;
   display: flex;
   justify-content: center;
