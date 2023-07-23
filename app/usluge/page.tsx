@@ -11,7 +11,6 @@ export default function page() {
       <Navbar ok="ne" />
 
       <SwiperOnama />
-      <Swiper />
     </div>
   );
 }

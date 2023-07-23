@@ -17,65 +17,77 @@ export default function Navbar({ ok }: { ok: string }) {
   }, []);
   return (
     <>
-      <div id="navbar" className={`${cairo.className} spusten`}>
-        <Link href="/">
-          <img src="/logo.svg" alt="logo" className="logo" />
-        </Link>
-        <ul className="flex pc">
-          <li>
-            <Link href="/o-nama">O nama</Link>
-          </li>
-          <li>
-            <Link
-              href="/usluge"
-              onClick={(e) => {
-                e.preventDefault();
-              }}
-            >
-              Usluge{" "}
-              {/* <span
-              onClick={(e) => {
-                e.preventDefault();
-                if (usluge === "nema") SetUsluge("ima");
-                else SetUsluge("nema");
-              }}
-            >
-              {" "}
-              &#8248;
-            </span> */}
-              <div className={`padajuci ${usluge}`}>
-                <ul>
-                  <li>
-                    <Link href="/usluge">Proslave 18. rodjendana</Link>
-                  </li>
-                </ul>
-              </div>
-            </Link>
-          </li>
-          <li>
-            <Link href="/dodatne-usluge">
-              Dodatne Usluge{" "}
-              <img
-                src="/svgs/down.svg"
-                alt="D"
-                onClick={(e) => {
-                  if (dusluge === "nema") SetDUsluge("ima");
-                  else SetDUsluge("nema");
-                }}
-              />
-            </Link>
-          </li>
-          <li>
-            <Link href="/karta-pica">Karta pića</Link>
-          </li>
-          <li>
-            <Link href="/o-nama">Kontakt</Link>
-          </li>
-        </ul>
-        <div className="navmobilebutton">
-          <img src="/options.svg" alt="dasdsd" />
+      {isClient ? (
+        <div id="navbar" className={`${cairo.className} spusten`}>
+          <Link href="/">
+            <img src="/logo.svg" alt="logo" className="logo" />
+          </Link>
+          <ul className="flex pc">
+            <li>
+              <Link href="/o-nama">O nama</Link>
+            </li>
+            <li>
+              <Link href="/usluge">
+                Usluge{" "}
+                <img
+                  src="/svgs/down.svg"
+                  alt="D"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    if (usluge === "nema") SetUsluge("ima");
+                    else SetUsluge("nema");
+                  }}
+                />
+                <div className={`padajuci ${usluge}`}>
+                  <ul>
+                    <li>
+                      <Link href="/usluge">Proslave 18. rodjendana</Link>
+                      <Link href="/usluge">Proslava Godišnjice</Link>
+                      <Link href="/usluge">Rođenje deteta</Link>
+                      <Link href="/usluge">Korporativni događaj</Link>
+                      <Link href="/usluge">Tinejdzerska proslava</Link>
+                    </li>
+                  </ul>
+                </div>
+              </Link>
+            </li>
+            <li>
+              <Link href="/dodatne-usluge">
+                Dodatne Usluge{" "}
+                <img
+                  src="/svgs/down.svg"
+                  alt="D"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    if (dusluge === "nema") SetDUsluge("ima");
+                    else SetDUsluge("nema");
+                  }}
+                />
+                <div className={`padajuci ${dusluge}`}>
+                  <ul>
+                    <li>
+                      <Link href="/usluge">Karta pića</Link>
+                      <Link href="/usluge">Ketering</Link>
+                      <Link href="/usluge">Muzika</Link>
+                      <Link href="/usluge">Fotograf</Link>
+                      <Link href="/usluge">Dekoracija</Link>
+                    </li>
+                  </ul>
+                </div>
+              </Link>
+            </li>
+            <li>
+              <Link href="/karta-pica">Karta pića</Link>
+            </li>
+            <li>
+              <Link href="/o-nama">Kontakt</Link>
+            </li>
+          </ul>
+          <div className="navmobilebutton">
+            <img src="/options.svg" alt="dasdsd" />
+          </div>
         </div>
-      </div>
+      ) : null}
     </>
     // <>
     //   <ul className={`mobile ${mobile}`}>

@@ -4,10 +4,9 @@ import Swiperr from "../usluge/components/Swiper";
 
 export default function page() {
   return (
-    <div id="dodatne-usluge">
-      asd
-      {/* <Navbar ok={"ne"} /> */}
-      {/* <Swiperr /> */}
+    <div id="dodatne">
+      <Navbar ok={"da"} />
+      <Swiperr />
     </div>
   );
 }

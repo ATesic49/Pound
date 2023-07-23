@@ -39,7 +39,7 @@
   margin-block: clamp(2vh, 2vw, 40px);
   max-width: 60%;
   margin-inline: auto;
-  text-align: left;
+  text-align: center;
   word-spacing: 1.1vh;
 }
 #kontakt-poc .p p {

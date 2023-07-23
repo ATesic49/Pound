@@ -26,21 +26,17 @@ export default function Kontakt() {
       </div>
       <div className={`p ${montserrat.className}`}>
         <p>
-          Pozdrav!
-          <br />
-          <br />
-          Veselimo se što ste zainteresovani za naš klub i saradnju sa nama.
-          <br />
-          <br />
           Za sve informacije i dogovore oko iznajmljivanja našeg prostora,
-          slobodno nam se obratite putem telefona na broj {""}
-          <Link href="tel:0644737375">0644737375</Link>, ili na {""}
-          <Link href="tel:0644737375">0644737375</Link>.
+          slobodno nam se obratite na brojeve {""}
+          <Link href="tel:064650475">064650475</Link>, ili na {""}
+          <Link href="tel:064593847">064593847</Link>.
+          <br /> <br />
+          Pošaljite nam e-mail na: <br />
+          <br />
+          <Link href="mailto:klubpound@gmail.com">klubpound@gmail.com</Link>
           <br />
           <br />
-          Pošaljite nam e-mail na{" "}
-          <Link href="mailto:klubpound@gmail.com">klubpound@gmail.com</Link> ili
-          nam jednostavno pošaljite poruku putem naše kontakt forme na web
+          ili nam jednostavno pošaljite poruku putem naše kontakt forme na web
           stranici.
           <br />
           <br />
