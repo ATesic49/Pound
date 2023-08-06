@@ -126,7 +126,7 @@ body {
   transform: translateX(-50%) translateY(-50%) rotate(40deg);
   width: 5%;
   aspect-ratio: 1/1;
-  background-color: #ff8870;
+  background-color: var(--primary-color);
 }
 #pocetna #pocetnaButton {
   position: absolute;
@@ -136,7 +136,7 @@ body {
   width: 10%;
   min-width: 75px;
   aspect-ratio: 5/2;
-  background-color: #ffcfa6;
+  background-color: var(--secondary-color);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -148,7 +148,10 @@ body {
   border-radius: 5px;
   overflow: hidden;
 }
-
+#pocetna #pocetnaButton a {
+  color: white;
+  text-decoration: none;
+}
 #pocetna #pocetnaButton::after {
   position: absolute;
   content: "";
@@ -366,4 +369,8 @@ body {
   #o-nama-poc h1 {
     filter: drop-shadow(3px -1.5px 0px var(--primary-color));
   } */
+}
+
+.usluge {
+  padding-top: 20vh;
 }

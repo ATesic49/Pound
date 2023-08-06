@@ -23,21 +23,15 @@ export default function Swiperr() {
   return (
     <>
       <Navbar ok="ne" />;
-      <div id="karta" className={montserrat.className}>
+      <div id="karta" className={aboshione.className}>
         <div className="h1">
           <h1>Karta Pića</h1>
           <p className="podnaslov">
-            Cena pi<span className={montserrat.className}>ć</span>a po osobi iz
-            odabranog paketa (normal, standard , premium) podrazumeva neograni
-            <span className={montserrat.className}>č</span>enu konzumaciju pi
-            <span className={montserrat.className}>ć</span>a iz ponude paketa
-            tokom cele proslave rodjendana.
+            Cena pića po osobi iz odabranog paketa obuhvata neograničeno
+            konzumiranje pića iz ponude paketa tokom cele proslave rođendana.
           </p>
           <p className="podnaslov">
-            U paketu pi<span className={montserrat.className}>ć</span>a za de
-            <span className={montserrat.className}>č</span>iji rodjendan (child)
-            se nalaze isklju<span className={montserrat.className}>č</span>ivo
-            bezalkoholna pića.
+            Dečiji paket obuhvata isključivo bezalkoholna pića.
           </p>
         </div>
         <div className="ispod">

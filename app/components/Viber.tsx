@@ -17,8 +17,8 @@ export default function VIber() {
         }}
       />
       <div className={`viberr ${klasav}`}>
-        <Link href="viber://contact?number=%2B381644737375">0644737375</Link>
-        <Link href="viber://contact?number=%2B381644737375">0644737376</Link>
+        <Link href="viber://contact?number=%2B38164650475">064650475</Link>
+        <Link href="viber://contact?number=%2B38164593847">064593847</Link>
       </div>
       <img
         id="wa"
@@ -30,8 +30,8 @@ export default function VIber() {
         }}
       />
       <div className={`whatsapp ${klasaw}`}>
-        <Link href="https://wa.me/381644737375">0644737375</Link>
-        <Link href="https://wa.me/381644737375">0644737375</Link>
+        <Link href="https://wa.me/38164650475">064650475</Link>
+        <Link href="https://wa.me/38164593847">064593847</Link>
       </div>
     </div>
   );

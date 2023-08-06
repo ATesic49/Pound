@@ -15,13 +15,13 @@ const montserrat = Montserrat({
 });
 export default function Punoletstvo() {
   return (
-    <div id="punoletstvo" className={`${aboshione.className} slidingItem`}>
+    <div id="punoletstvo" className={`aboshione slidingItem`}>
       <div className="h1">
         <h1>Proslava 18-og rodjendana</h1>
       </div>
       <div className="ispod">
         <div className="p">
-          <p>
+          <p className={montserrat.className}>
             Osetite svoj 18. ro<span className={montserrat.className}>đ</span>
             endan uz neverovatnu zabavu i prostrani prostor! Pru
             <span className={montserrat.className}>ž</span>amo vam nezaboravnu

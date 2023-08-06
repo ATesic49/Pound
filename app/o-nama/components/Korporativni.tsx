@@ -15,13 +15,13 @@ const montserrat = Montserrat({
 });
 export default function Korporativni() {
   return (
-    <div id="godisnjica" className={`${aboshione.className} slidingItem`}>
+    <div id="godisnjica" className={`aboshione slidingItem`}>
       <div className="h1">
         <h1>Korporativni dogadjaj</h1>
       </div>
       <div className="ispod">
         <div className="p">
-          <p>
+          <p className={montserrat.className}>
             Proslavite postignu<span className={montserrat.className}>ć</span>a
             i uspehe va<span className={montserrat.className}>š</span>eg tima u
             na<span className={montserrat.className}>š</span>im kancelarijskim

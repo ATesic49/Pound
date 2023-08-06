@@ -1,0 +1,126 @@
+.dusluge .container {
+  background-image: url("/images/ketering.jpeg");
+  padding-block: 10vh;
+  text-align: center;
+  min-height: 90vh;
+  color: white;
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: -10vh;
+  background-position: center;
+}
+.dusluge .dodatneM {
+  background-image: url("/images/muzika.jpeg");
+}
+.dusluge .foto {
+  background-image: url("/images/fotograf.jpeg");
+}
+.dusluge .decor {
+  background-position: bottom;
+  background-image: url("/images/decor.jpeg");
+}
+.dusluge .container::after {
+  top: 0;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  content: "";
+  z-index: 1;
+}
+.dusluge .container h1 {
+  position: absolute;
+  top: 25%;
+  z-index: 2;
+  left: 50%;
+  transform: translate(-50%, -100%);
+  font-size: var(--font-size-Xlarge);
+}
+.dusluge .container p {
+  z-index: 2;
+  user-select: none;
+  width: 80%;
+  padding-block: 10vh;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, 00%);
+  font-size: var(--font-size-large);
+  margin-inline: auto;
+}
+.dusluge .container ul {
+  position: absolute;
+  top: 55%;
+  z-index: 2;
+  list-style: none;
+  width: 80%;
+  display: flex;
+  left: 10%;
+  min-width: 250px;
+  gap: 4vh;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.dusluge .container ul li {
+  font-style: bold;
+  user-select: none;
+  font-size: var(--font-size-large);
+}
+.dusluge .container .a {
+  position: absolute;
+  cursor: pointer;
+  top: 75%;
+  color: white;
+  z-index: 2;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  font-size: var(--font-size-large);
+  padding: 2vh 5vh;
+  border-radius: 2vh;
+  z-index: 2;
+  text-decoration: none;
+  background-color: var(--primary-color);
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+.dusluge .container a {
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+  z-index: 2;
+}
+
+.dusluge .container .a:hover::before {
+  animation: a 0.5s ease-in forwards;
+}
+.dusluge .container .a::before {
+  position: absolute;
+  top: 1000%;
+  content: "";
+  border-radius: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20%;
+  aspect-ratio: 1/1;
+  background-color: var(--secondary-color);
+  z-index: -1;
+}
+@keyframes a {
+  0% {
+    top: 100%;
+    width: 20%;
+  }
+  20%,
+  50% {
+    top: 50%;
+    width: 20%;
+  }
+
+  100% {
+    top: 50%;
+    width: 150%;
+  }
+}

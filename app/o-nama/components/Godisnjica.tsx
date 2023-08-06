@@ -15,15 +15,13 @@ const montserrat = Montserrat({
 });
 export default function Godisnjica() {
   return (
-    <div id="godisnjica" className={`${aboshione.className} slidingItem`}>
+    <div id="godisnjica" className={`aboshione slidingItem`}>
       <div className="h1">
-        <h1>
-          Proslava godi<span className={montserrat.className}>š</span>njice
-        </h1>
+        <h1>Proslava godišnjice</h1>
       </div>
       <div className="ispod">
         <div className="p">
-          <p>
+          <p className={montserrat.className}>
             Vratite se u vreme se<span className={montserrat.className}>ć</span>
             anja na neverovatnu godi
             <span className={montserrat.className}>š</span>njicu mature! Obe

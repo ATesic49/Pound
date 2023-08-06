@@ -1,5 +1,6 @@
 "use client";
 import { Cairo } from "@next/font/google";
+import Link from "next/link";
 
 const cairo = Cairo({
   subsets: ["latin"],
@@ -8,7 +9,10 @@ const cairo = Cairo({
 export default function PocetnaButton() {
   return (
     <div id="pocetnaButton" className={cairo.className}>
-      <p> Kontakt </p>
+      <p>
+        {" "}
+        <Link href="/kontakt">Kontakt</Link>{" "}
+      </p>
     </div>
   );
 }

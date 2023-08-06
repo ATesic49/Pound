@@ -1,19 +1,13 @@
 import React from "react";
 import EmailSender from "./EmailSender";
-import { Aoboshi_One, Montserrat, Nunito, Cairo } from "@next/font/google";
+import { Aoboshi_One, Montserrat } from "@next/font/google";
 import Link from "next/link";
-const cairo = Cairo({
-  weight: ["400"],
-  subsets: ["latin"],
-});
+
 const aboshione = Aoboshi_One({
   weight: ["400"],
   subsets: ["latin"],
 });
-const nunito = Nunito({
-  subsets: ["latin"],
-  weight: ["700"],
-});
+
 const montserrat = Montserrat({
   subsets: ["latin"],
   weight: ["600", "700"],
@@ -22,9 +16,9 @@ export default function Kontakt() {
   return (
     <div id="kontakt-poc" className={montserrat.className}>
       <div className="h1">
-        <h1 className={aboshione.className}>Kontakt</h1>
+        <h1>Kontakt</h1>
       </div>
-      <div className={`p ${montserrat.className}`}>
+      <div className={`p `}>
         <p>
           Za sve informacije i dogovore oko iznajmljivanja našeg prostora,
           slobodno nam se obratite na brojeve {""}
@@ -40,9 +34,9 @@ export default function Kontakt() {
           stranici.
           <br />
           <br />
-          Naša ekipa je ovdje da vam pomogne i odgovori na sva pitanja koja
-          imate. Radujemo se uspostaviti kontakt s vama i dogovoriti nezaboravnu
-          saradnju!
+          Naša ekipa je ovde da vam pomogne i odgovori na sva pitanja koja
+          imate. Radujemo se uspostavljanju kontakta s vama i ugovaranju
+          nezaboravne žurke!
         </p>
       </div>
       <EmailSender />
@@ -66,12 +60,12 @@ export default function Kontakt() {
               </div>
             </div> */}
           <div className="tel">
-            <Link href="tel:0644737375">064-473-73-75</Link>
+            <Link href="tel:064650475">064-650-475</Link>
             <div className="outline"></div>
           </div>
 
           <div className="tel">
-            <Link href="tel:0644737375">064-473-73-75</Link>
+            <Link href="tel:064593847">064-593-847</Link>
             <div className="outline"></div>
           </div>
         </div>

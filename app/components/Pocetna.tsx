@@ -1,7 +1,6 @@
 "use client";
 import { Lobster } from "@next/font/google";
 import { Fugaz_One } from "@next/font/google";
-import Onama from "./Onama";
 import PocetnaButton from "./PocetnaButton";
 const lobster = Lobster({
   subsets: ["latin"],

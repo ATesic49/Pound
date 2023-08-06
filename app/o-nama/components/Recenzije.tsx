@@ -1,5 +1,5 @@
 import React from "react";
-import { Aoboshi_One, Montserrat, Nunito, Cairo } from "next/font/google";
+import { Aoboshi_One, Montserrat, Nunito, Cairo } from "@next/font/google";
 import Link from "next/link";
 const cairo = Cairo({
   weight: ["400"],

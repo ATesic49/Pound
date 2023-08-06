@@ -2,8 +2,9 @@
 import React, { useEffect, useState } from "react";
 import validator from "validator";
 import axios from "axios";
-import { Aoboshi_One, Montserrat, Nunito, Cairo } from "next/font/google";
+import { Aoboshi_One, Montserrat, Nunito, Cairo } from "@next/font/google";
 import { toast, ToastContainer } from "react-toastify";
+import { usePathname, useRouter } from "next/navigation";
 const cairo = Cairo({
   weight: ["400"],
   subsets: ["latin"],
@@ -34,21 +35,21 @@ export default function EmailSender() {
   const [textValid, SetTextValid] = useState("");
   const [dateValid, SetDateValid] = useState("");
 
-  const fetchData = async () => {
+  var url: string;
+  useEffect(() => {
+    url = window.location.href;
+  }, []);
+  const fetchData = async (urll: string) => {
     try {
-      const res = await axios.post(
-        "http://localhost:3000/api/contact" ||
-          "https://pound-six.vercel.app//api/contact",
-        {
-          email,
-          naslov,
-          text,
-          ime,
-          broj,
-          tip,
-          date,
-        }
-      );
+      const res = await axios.post(`${urll}api/contact`, {
+        email,
+        naslov,
+        text,
+        ime,
+        broj,
+        tip,
+        date,
+      });
       if (res.data.status === "success") {
         return toast("USPEH");
       } else {
@@ -253,7 +254,7 @@ export default function EmailSender() {
                   min: 1,
                 })
               )
-                fetchData();
+                fetchData(url);
             }}
           >
             Pošalji

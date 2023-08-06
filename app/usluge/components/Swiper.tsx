@@ -1,5 +1,5 @@
 "use client";
-import { Aoboshi_One, Montserrat, Nunito, Cairo } from "next/font/google";
+import { Aoboshi_One, Montserrat, Nunito, Cairo } from "@next/font/google";
 import Link from "next/link";
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -39,7 +39,7 @@ export default function Swiperr() {
           </p>
 
           <Link href="/karta-pica" className={aboshione.className}>
-            Pogledaj Cenu
+            Detaljnije
           </Link>
         </div>
         <div className="karta">
@@ -50,8 +50,8 @@ export default function Swiperr() {
             voluptatem est ratione tenetur ullam porro autem aspernatur cumque
             numquam distinctio?
           </p>
-          <Link href="/cena" className={aboshione.className}>
-            Pogledaj Cenu
+          <Link href="/dodatne-usluge/ketering" className={aboshione.className}>
+            Detaljnije
           </Link>
         </div>
         <div className="karta">
@@ -62,26 +62,20 @@ export default function Swiperr() {
             voluptatem est ratione tenetur ullam porro autem aspernatur cumque
             numquam distinctio?
           </p>
-          <Link href="/cena" className={aboshione.className}>
-            Pogledaj Cenu
+          <Link href="/dodatne-usluge/muzika" className={aboshione.className}>
+            Detaljnije
           </Link>
         </div>
         <div className="karta">
           <img src="/svgs/foto.svg" alt="" />
-          <h2>Profesionalni Forograf</h2>
+          <h2>Profesionalni Fotograf</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
             voluptatem est ratione tenetur ullam porro autem aspernatur cumque
             numquam distinctio?
           </p>
-          <Link
-            href="/cena"
-            onClick={(e) => {
-              e.preventDefault();
-            }}
-            className={aboshione.className}
-          >
-            30€
+          <Link href="/dodatne-usluge/fotograf" className={aboshione.className}>
+            Detaljnije
           </Link>
         </div>
 
@@ -93,8 +87,11 @@ export default function Swiperr() {
             voluptatem est ratione tenetur ullam porro autem aspernatur cumque
             numquam distinctio?
           </p>
-          <Link href="/cena" className={aboshione.className}>
-            Pogledaj Cenu
+          <Link
+            href="/dodatne-usluge/dekoracija"
+            className={aboshione.className}
+          >
+            Detaljnije
           </Link>
         </div>
       </div>

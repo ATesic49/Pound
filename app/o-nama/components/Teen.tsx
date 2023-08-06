@@ -15,7 +15,7 @@ const montserrat = Montserrat({
 });
 export default function Teen() {
   return (
-    <div id="Teen" className={`aoboshione slidingItem`}>
+    <div id="Teen" className={`${aboshione.className} slidingItem`}>
       <div className="h1">
         <h1>Tinejdzerska proslava</h1>
       </div>
@@ -23,16 +23,16 @@ export default function Teen() {
         <div className="p">
           <p className={montserrat.className}>
             Učinite svoju tinejdžersku proslavu nezaboravnom u našem klubu! Uz
-            vrhunske DJ-e, barmene i obezbedjenje, Vaša proslava će biti pun
+            vrhunske DJ-eve, barmene i obezbedjenje, Vaša proslava će biti pun
             pogodak.
             <br />
             Prostor je prilagođen vašim željama,zahtevima i novčaniku. Uživajte
             u ludoj i zabavnoj atmosferi, dok naša stručna ekipa vodi brigu o
             svim detaljima.
             <br />
-            Ne propustite priliku stvoriti nezaboravne uspomene s prijateljima.
-            Rezervišite svoj termin danas i doživite nevjerovatnu proslavu u
-            klubu "Pound"!
+            Ne propustite priliku da stvorite nezaboravne uspomene s
+            prijateljima. Rezervišite svoj termin danas i doživite nevjerovatnu
+            proslavu u klubu "Pound"!
           </p>
         </div>
         <div className="img">{/* <img src="/beba.svg" alt="" /> */}</div>

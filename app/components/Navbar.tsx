@@ -27,7 +27,12 @@ export default function Navbar({ ok }: { ok: string }) {
               <Link href="/o-nama">O nama</Link>
             </li>
             <li>
-              <Link href="/usluge">
+              <Link
+                href="/usluge"
+                onClick={(e) => {
+                  e.preventDefault();
+                }}
+              >
                 Usluge{" "}
                 <img
                   src="/svgs/down.svg"
@@ -41,18 +46,33 @@ export default function Navbar({ ok }: { ok: string }) {
                 <div className={`padajuci ${usluge}`}>
                   <ul>
                     <li>
-                      <Link href="/usluge">Proslave 18. rodjendana</Link>
-                      <Link href="/usluge">Proslava Godišnjice</Link>
-                      <Link href="/usluge">Rođenje deteta</Link>
-                      <Link href="/usluge">Korporativni događaj</Link>
-                      <Link href="/usluge">Tinejdzerska proslava</Link>
+                      <Link href="/usluge/punoletstvo">
+                        Proslave 18. rodjendana
+                      </Link>
+                      <Link href="/usluge/godisnjica">Proslava Godišnjice</Link>
+                      <Link href="/usluge/rodjenje-deteta">Rođenje deteta</Link>
+                      <Link href="/usluge/korporativni-dogadjaj">
+                        Korporativni događaj
+                      </Link>
+                      <Link href="/usluge/tinejdzerska-proslava">
+                        Tinejdzerska proslava
+                      </Link>
                     </li>
                   </ul>
                 </div>
               </Link>
             </li>
+
             <li>
-              <Link href="/dodatne-usluge">
+              <Link href="/karta-pica">Karta pića</Link>
+            </li>
+            <li>
+              <Link
+                href="/dodatne-usluge"
+                onClick={(e) => {
+                  e.preventDefault();
+                }}
+              >
                 Dodatne Usluge{" "}
                 <img
                   src="/svgs/down.svg"
@@ -66,21 +86,17 @@ export default function Navbar({ ok }: { ok: string }) {
                 <div className={`padajuci ${dusluge}`}>
                   <ul>
                     <li>
-                      <Link href="/usluge">Karta pića</Link>
-                      <Link href="/usluge">Ketering</Link>
-                      <Link href="/usluge">Muzika</Link>
-                      <Link href="/usluge">Fotograf</Link>
-                      <Link href="/usluge">Dekoracija</Link>
+                      <Link href="/dodatne-usluge/ketering">Ketering</Link>
+                      <Link href="/dodatne-usluge/muzika">Muzika</Link>
+                      <Link href="/dodatne-usluge/fotograf">Fotograf</Link>
+                      <Link href="/dodatne-usluge/dekoracija">Dekoracija</Link>
                     </li>
                   </ul>
                 </div>
               </Link>
             </li>
             <li>
-              <Link href="/karta-pica">Karta pića</Link>
-            </li>
-            <li>
-              <Link href="/o-nama">Kontakt</Link>
+              <Link href="/kontakt">Kontakt</Link>
             </li>
           </ul>
           <div className="navmobilebutton">

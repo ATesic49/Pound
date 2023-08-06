@@ -55,7 +55,10 @@ export default function Onama() {
             <img className="frontface" src="/pocetna2.jpeg"></img>
             <div className="backface">
               <div className="dugme">
-                <Link href="/slike" className={`link ${montserrat.className}`}>
+                <Link
+                  href="/o-nama#slike"
+                  className={`link ${montserrat.className}`}
+                >
                   Pogledaj Još Slika
                 </Link>
               </div>

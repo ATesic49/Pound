@@ -2,6 +2,7 @@
   min-height: 30vh;
   min-height: 30svh;
   width: 100%;
+  padding-top: 10vh;
 }
 #kontakt-poc .h1 {
   padding: 5vw 0;
@@ -198,8 +199,7 @@
 }
 #kontakt-poc #pozovi .ispod {
   width: 100%;
-  margin-top: 5%;
-  height: clamp(15vw, 25vh, 25vw);
+  margin-block: 7.5vh;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
