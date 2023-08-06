@@ -27,11 +27,11 @@ export default function Home() {
     <main>
       <Navbar ok={"da"} />
       <Pocetna />
-      <Uslugee />
+      <Uslugee h2={true} />
       {/* <Onama /> */}
       {/* <Usluge /> */}
       {/* <Cena /> */}
-      <Kontakt />
+      <Kontakt h2={true} />
     </main>
   );
 }

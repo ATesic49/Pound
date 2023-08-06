@@ -10,7 +10,8 @@ export default function VIber() {
     <div id="viber">
       <img
         src="/svgs/viberr.svg"
-        alt=""
+        alt="viber"
+        title="viber"
         onClick={() => {
           if (klasav === "") SetKlasav("on");
           else SetKlasav("");
@@ -23,7 +24,8 @@ export default function VIber() {
       <img
         id="wa"
         src="/svgs/wa.svg"
-        alt=""
+        alt="whatsapp"
+        title="whatsapp"
         onClick={() => {
           if (klasaw === "") SetKlasaw("on");
           else SetKlasaw("");

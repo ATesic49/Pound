@@ -1,9 +1,8 @@
 import { Kablammo } from "@next/font/google";
-import "../public/global.css";
-import Footer from "./components/Footer";
+import Footer from "../components/Footer";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import VIber from "./components/Viber";
+import VIber from "../components/Viber";
 const name = ["Andrija Arsenijevic"];
 const cairo = Kablammo({
   subsets: ["latin"],
@@ -11,9 +10,8 @@ const cairo = Kablammo({
 });
 
 export const metadata = {
-  title: "Klub Pound | Iznajmljivanje, Proslave 18. rođendana, Žurke ",
-  description:
-    "Bliži ti se rođendan?Ne znaš gde proslaviti? Naš klub Pound nudi ti prostran prostor za male pare.Nebitno da li slaviš godišnjicu, punoletstvo, ili rođenje deteta.Klub Pound je uvek tu za Vas.",
+  title: "Klub Pound | O klubu ",
+  description: "a",
 };
 
 export default function RootLayout({

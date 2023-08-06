@@ -22,8 +22,7 @@ export default function Godisnjica() {
       <div className="ispod">
         <div className="p">
           <p className={montserrat.className}>
-            Vratite se u vreme se<span className={montserrat.className}>ć</span>
-            anja na neverovatnu godi
+            Vratite se u vreme seć anja na neverovatnu godi
             <span className={montserrat.className}>š</span>njicu mature! Obe
             <span className={montserrat.className}>ć</span>avamo Vam prostor
             koji <span className={montserrat.className}>ć</span>e Vam pru
@@ -36,9 +35,8 @@ export default function Godisnjica() {
             <span className={montserrat.className}>č</span>ke trenutke. Neka Va
             <span className={montserrat.className}>š</span>a godi
             <span className={montserrat.className}>š</span>njica bude
-            nezaboravno iskustvo koje
-            <span className={montserrat.className}>ć</span>e Vam obnoviti veze i
-            stvoriti nove uspomene.
+            nezaboravno iskustvo koje će Vam obnoviti veze i stvoriti nove
+            uspomene.
           </p>
         </div>
         <div className="img">{/* <img src="/reunion.svg" alt="" /> */}</div>
@@ -100,21 +98,21 @@ export default function Godisnjica() {
       <div className="dole">
         <div className="levo">
           {/* <h1>350€ </h1> <span>/noć</span> */}
-          <img src="/svgs/handshake.svg" alt="" />
+          <img src="/svgs/handshake.svg" alt="cena" title="cena" />
           <h2>Cena po dogovoru</h2>
         </div>
         <div className="desno">
           <h2>U cenu ulazi</h2>
           <div className="deo">
-            <img src="/svgs/check.svg" />
+            <img src="/svgs/check.svg" alt="da" title="da" />
             <p>Barmen</p>
           </div>
           <div className="deo">
-            <img src="/svgs/check.svg" />
+            <img src="/svgs/check.svg" alt="da" title="da" />
             <p>Profesionalni Dj</p>
           </div>
           <div className="deo">
-            <img src="/svgs/check.svg" />
+            <img src="/svgs/check.svg" alt="da" title="da" />
             <p>Obezbedjenje</p>
           </div>
         </div>

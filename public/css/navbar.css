@@ -47,7 +47,7 @@
 }
 #navbar .pc {
   /* gap: calc(var(--font-size-mid) * 2); */
-  width: clamp(240px, 60%, 1050px);
+  width: clamp(240px, 65%, 1050px);
   justify-content: space-around;
   /* margin-right: clamp(10px, 3vh, 40px); */
 }

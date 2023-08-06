@@ -76,7 +76,7 @@ export default function EmailSender() {
       <div id="email" className={aboshione.className}>
         <div className="h2">
           <h2>
-            Posalji nam <span>Email</span>
+            Pošalji nam <span>Email</span>
           </h2>
         </div>
         <div className="ispod">
@@ -156,10 +156,11 @@ export default function EmailSender() {
                   }}
                 >
                   {" "}
-                  <option>18 Rodjendan</option>
-                  <option>Proslava Godisnjice</option>
+                  <option>18. Rodjendan</option>
+                  <option>Proslava Godišnjice</option>
                   <option>Rodjenje deteta</option>
                   <option>Korporativni Dogadjaj</option>
+                  <option>Tinejdžerska Proslava</option>
                 </select>
               </div>
               <div className="ime">

@@ -2,7 +2,7 @@
   padding: 10vh 0;
   position: relative;
 }
-#slike .h1 h1 {
+#slike .h1 h2 {
   font-size: var(--font-size-Xlarge);
   margin-inline: auto;
   width: fit-content;
@@ -13,7 +13,7 @@
   max-width: 60%;
   margin-bottom: 15vh;
 }
-#slike h1::after {
+#slike h2::after {
   position: absolute;
   top: 50%;
   left: 0%;
@@ -23,7 +23,7 @@
   transform: translate(-300%, -50%);
   width: fit-content;
 }
-#slike h1::before {
+#slike h2::before {
   position: absolute;
   top: 50%;
   left: 100%;
@@ -92,7 +92,7 @@
   transform: translate(-50%, -50%);
 }
 
-#slike .ispod .img h2 {
+#slike .ispod .img h3 {
   position: absolute;
   top: 70%;
   color: white;
@@ -100,14 +100,18 @@
   left: -50%;
   transform: translate(-50%, -50%);
   z-index: 5;
+  font-size: var(--font-size-large) !important;
 }
-#slike .ispod .img:hover h2 {
+#slike .ispod .img:hover h3 {
   animation: udesno 0.4s 0.05s ease-in forwards;
 }
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 670px) {
   /* #slike .h1 h1 {
     filter: drop-shadow(3px -1.5px 0px var(--primary-color));
   } */
+  #slike .ispod .img h3 {
+    font-size: var(--font-size-Xlarge) !important;
+  }
 }
 @keyframes gore {
   0% {
@@ -136,7 +140,7 @@
     left: -50%;
   }
   75% {
-    left: 62.5%;
+    left: 55.5%;
   }
   100% {
     left: 50%;

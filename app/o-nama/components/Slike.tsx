@@ -21,33 +21,33 @@ export default function Slike() {
   return (
     <div id="slike" className={aboshione.className}>
       <div className="h1">
-        <h1>
+        <h2>
           Proverite na<span className={montserrat.className}>š</span> prostor
-        </h1>
+        </h2>
         <div className="ispod">
           <div className="img">
-            <img src="/glavna-soba.jpg" alt="" />
-            <h2 className={montserrat.className}>Glavna soba</h2>
+            <img src="/glavna-soba.jpg" alt="glavna-soba" title="glavna-soba" />
+            <h3 className={montserrat.className}>Glavna soba</h3>
           </div>
           <div className="img">
             <img src="/pocetna.jpeg" alt="" />
-            <h2 className={montserrat.className}>Glavna soba</h2>
+            <h3 className={montserrat.className}>Glavna soba</h3>
           </div>
           <div className="img">
             <img src="/pocetna.jpeg" alt="" />
-            <h2 className={montserrat.className}>Glavna soba</h2>
+            <h3 className={montserrat.className}>Glavna soba</h3>
           </div>
           <div className="img">
             <img src="/pocetna.jpeg" alt="" />
-            <h2 className={montserrat.className}>Glavna soba</h2>
+            <h3 className={montserrat.className}>Glavna soba</h3>
           </div>
           <div className="img">
             <img src="/pocetna.jpeg" alt="" />
-            <h2 className={montserrat.className}>Glavna soba</h2>
+            <h3 className={montserrat.className}>Glavna soba</h3>
           </div>
           <div className="img">
             <img src="/pocetna.jpeg" alt="" />
-            <h2 className={montserrat.className}>Glavna soba</h2>
+            <h3 className={montserrat.className}>Glavna soba</h3>
           </div>
         </div>
       </div>

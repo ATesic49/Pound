@@ -21,7 +21,7 @@ export default function Recenzije() {
   return (
     <div id="recenzije">
       <div className="h1">
-        <h1>Recenzije</h1>
+        <h2>Recenzije</h2>
       </div>
       <div className="ispod">
         <div className="recenzija">
@@ -66,7 +66,7 @@ export default function Recenzije() {
         </div>
         <div className="recenzija">
           <p>Nezaboravan provod, odlican DJ.</p>
-          <h2>Luka Andzić</h2>
+          <h2>Luka Andžić</h2>
         </div>
       </div>
     </div>

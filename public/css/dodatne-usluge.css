@@ -33,6 +33,7 @@
 .dusluge .container h1 {
   position: absolute;
   top: 25%;
+  top: 45%;
   z-index: 2;
   left: 50%;
   transform: translate(-50%, -100%);
@@ -45,6 +46,8 @@
   padding-block: 10vh;
   position: absolute;
   top: 25%;
+  top: 40%;
+
   left: 50%;
   transform: translate(-50%, 00%);
   font-size: var(--font-size-large);
@@ -52,7 +55,7 @@
 }
 .dusluge .container ul {
   position: absolute;
-  top: 55%;
+  top: 75% !important;
   z-index: 2;
   list-style: none;
   width: 80%;
@@ -84,6 +87,7 @@
   text-decoration: none;
   background-color: var(--primary-color);
   overflow: hidden;
+  display: none;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
 }
 .dusluge .container a {

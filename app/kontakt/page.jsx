@@ -6,7 +6,7 @@ export default function page() {
   return (
     <div id="kontakt">
       <Navbar ok="ne" />
-      <Kontakt />
+      <Kontakt h2={false} />
     </div>
   );
 }

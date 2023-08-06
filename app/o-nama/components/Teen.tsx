@@ -17,7 +17,7 @@ export default function Teen() {
   return (
     <div id="Teen" className={`${aboshione.className} slidingItem`}>
       <div className="h1">
-        <h1>Tinejdzerska proslava</h1>
+        <h1>Tinejdžerska proslava</h1>
       </div>
       <div className="ispod">
         <div className="p">
@@ -94,21 +94,21 @@ export default function Teen() {
       <div className="dole">
         <div className="levo">
           {/* <h1>350€ </h1> <span>/noć</span> */}
-          <img src="/svgs/handshake.svg" alt="" />
+          <img src="/svgs/handshake.svg" alt="cena" title="cena" />
           <h2>Cena po dogovoru</h2>
         </div>
         <div className="desno">
           <h2>U cenu ulazi</h2>
           <div className="deo">
-            <img src="/svgs/check.svg" />
+            <img src="/svgs/check.svg" alt="da" title="da" />
             <p>Barmen</p>
           </div>
           <div className="deo">
-            <img src="/svgs/check.svg" />
+            <img src="/svgs/check.svg" alt="da" title="da" />
             <p>Profesionalni Dj</p>
           </div>
           <div className="deo">
-            <img src="/svgs/check.svg" />
+            <img src="/svgs/check.svg" alt="da" title="da" />
             <p>Obezbedjenje</p>
           </div>
         </div>

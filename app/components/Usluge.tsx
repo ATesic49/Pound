@@ -33,7 +33,8 @@ export default function Usluge() {
         </h2>
         <div className="p">
           <p>
-            Osetite svoj 18. ro<span className={montserrat.className}>đ</span>
+            Proslavite svoj 18. ro
+            <span className={montserrat.className}>đ</span>
             endan uz neverovatnu zabavu i prostrani prostor! Pru
             <span className={montserrat.className}>ž</span>amo vam nezaboravnu
             no<span className={montserrat.className}>ć</span> s prijateljima, uz
@@ -63,8 +64,7 @@ export default function Usluge() {
             Vratite se u vreme se<span className={montserrat.className}>ć</span>
             anja na neverovatnu godi
             <span className={montserrat.className}>š</span>njicu mature! Obe
-            <span className={montserrat.className}>ć</span>avamo Vam prostor
-            koji <span className={montserrat.className}>ć</span>e Vam pru
+            zbedićemo Vam prostor koji Vam pru
             <span className={montserrat.className}>ž</span>iti dovoljno mesta za
             ponovno okupljanje s dragim prijateljima. U
             <span className={montserrat.className}>ž</span>ivajte u opu

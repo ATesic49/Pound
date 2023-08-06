@@ -14,10 +14,14 @@ const montserrat = Montserrat({
   subsets: ["latin"],
   weight: ["600", "700"],
 });
-export default function Onama() {
+export default function Onama(h2: boolean) {
   return (
     <div id="o-nama-poc" className={aboshione.className}>
-      <h1>Najuzbudljiviji provod u Beogradu</h1>
+      {h2 ? (
+        <h2>Najuzbudljiviji provod u Beogradu</h2>
+      ) : (
+        <h1>Najuzbudljiviji provod u Beogradu</h1>
+      )}
       <div className="ispod">
         <div className="p">
           <p className={montserrat.className}>
@@ -47,12 +51,17 @@ export default function Onama() {
             nezaboravniju atmosferu, tu su usluge fotografa i muzike uživo, kao
             i catering.
             <br />
-            Vaša zabava, Vaše pravilo!
+            Vaša zabava, Vaša pravila!
           </p>
         </div>
         <div className="img">
           <div className="thecard">
-            <img className="frontface" src="/pocetna2.jpeg"></img>
+            <img
+              className="frontface"
+              alt="slika"
+              title="slika kluba"
+              src="/pocetna2.jpeg"
+            ></img>
             <div className="backface">
               <div className="dugme">
                 <Link

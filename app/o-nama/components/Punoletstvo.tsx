@@ -22,7 +22,8 @@ export default function Punoletstvo() {
       <div className="ispod">
         <div className="p">
           <p className={montserrat.className}>
-            Osetite svoj 18. ro<span className={montserrat.className}>đ</span>
+            Proslavite svoj 18. ro
+            <span className={montserrat.className}>đ</span>
             endan uz neverovatnu zabavu i prostrani prostor! Pru
             <span className={montserrat.className}>ž</span>amo vam nezaboravnu
             no<span className={montserrat.className}>ć</span> sa prijateljima,
@@ -79,7 +80,7 @@ export default function Punoletstvo() {
             <div className="p">Unajmljeno obezbedjenje</div>
           </div>
           <div className="deo">
-            <img src="/svgs/check.svg" alt="" />
+            < src="/svgs/check.svg" alt="" />
             <div className="p">
               Neograni<span className={montserrat.className}>č</span>en broj pi
               <span className={montserrat.className}>ć</span>a
@@ -93,21 +94,21 @@ export default function Punoletstvo() {
       <div className="dole">
         <div className="levo">
           {/* <h1>350€ </h1> <span>/noć</span> */}
-          <img src="/svgs/handshake.svg" alt="" />
+          <img src="/svgs/handshake.svg" alt="cena" title="cena" />
           <h2>Cena po dogovoru</h2>
         </div>
         <div className="desno">
           <h2>U cenu ulazi</h2>
           <div className="deo">
-            <img src="/svgs/check.svg" />
+            <img src="/svgs/check.svg" alt="da" title="da" />
             <p>Barmen</p>
           </div>
           <div className="deo">
-            <img src="/svgs/check.svg" />
+            <img src="/svgs/check.svg" alt="da" title="da" />
             <p>Profesionalni Dj</p>
           </div>
           <div className="deo">
-            <img src="/svgs/check.svg" />
+            <img src="/svgs/check.svg" alt="da" title="da" />
             <p>Obezbedjenje</p>
           </div>
         </div>

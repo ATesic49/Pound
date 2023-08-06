@@ -20,7 +20,7 @@ export default function Navbar({ ok }: { ok: string }) {
       {isClient ? (
         <div id="navbar" className={`${cairo.className} spusten`}>
           <Link href="/">
-            <img src="/logo.svg" alt="logo" className="logo" />
+            <img src="/logo.svg" alt="logo" title="logo" className="logo" />
           </Link>
           <ul className="flex pc">
             <li>
@@ -35,8 +35,9 @@ export default function Navbar({ ok }: { ok: string }) {
               >
                 Usluge{" "}
                 <img
+                  title="strelica nadole"
                   src="/svgs/down.svg"
-                  alt="D"
+                  alt="strelica nadole"
                   onClick={(e) => {
                     e.preventDefault();
                     if (usluge === "nema") SetUsluge("ima");
@@ -55,7 +56,7 @@ export default function Navbar({ ok }: { ok: string }) {
                         Korporativni događaj
                       </Link>
                       <Link href="/usluge/tinejdzerska-proslava">
-                        Tinejdzerska proslava
+                        Tinejdžerska proslava
                       </Link>
                     </li>
                   </ul>
@@ -75,8 +76,9 @@ export default function Navbar({ ok }: { ok: string }) {
               >
                 Dodatne Usluge{" "}
                 <img
+                  title="strelica nadole"
                   src="/svgs/down.svg"
-                  alt="D"
+                  alt="strelica nadole"
                   onClick={(e) => {
                     e.preventDefault();
                     if (dusluge === "nema") SetDUsluge("ima");
@@ -99,9 +101,9 @@ export default function Navbar({ ok }: { ok: string }) {
               <Link href="/kontakt">Kontakt</Link>
             </li>
           </ul>
-          <div className="navmobilebutton">
+          {/* <div className="navmobilebutton">
             <img src="/options.svg" alt="dasdsd" />
-          </div>
+          </div> */}
         </div>
       ) : null}
     </>

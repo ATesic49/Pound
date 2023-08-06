@@ -12,26 +12,24 @@ const montserrat = Montserrat({
   subsets: ["latin"],
   weight: ["600", "700"],
 });
-export default function Kontakt() {
+export default function Kontakt({ h2 }: { h2: boolean }) {
   return (
     <div id="kontakt-poc" className={montserrat.className}>
-      <div className="h1">
-        <h1>Kontakt</h1>
-      </div>
+      <div className="h1">{h2 ? <h2>Kontakt</h2> : <h1>Kontakt</h1>}</div>
       <div className={`p `}>
         <p>
           Za sve informacije i dogovore oko iznajmljivanja našeg prostora,
-          slobodno nam se obratite na brojeve {""}
-          <Link href="tel:064650475">064650475</Link>, ili na {""}
-          <Link href="tel:064593847">064593847</Link>.
-          <br /> <br />
+          slobodno nam se obratite na brojeve:
+          <br />
+          <br />
+          <Link href="tel:064650475">064650475</Link>
+          &nbsp; &nbsp; &nbsp; &nbsp;
+          <Link href="tel:064593847">064593847</Link>
+          <br />
+          <br />
           Pošaljite nam e-mail na: <br />
           <br />
           <Link href="mailto:klubpound@gmail.com">klubpound@gmail.com</Link>
-          <br />
-          <br />
-          ili nam jednostavno pošaljite poruku putem naše kontakt forme na web
-          stranici.
           <br />
           <br />
           Naša ekipa je ovde da vam pomogne i odgovori na sva pitanja koja

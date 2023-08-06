@@ -13,7 +13,12 @@ const fugazOne = Fugaz_One({
 export default function Pocetna() {
   return (
     <div id="pocetna" className={lobster.className}>
-      <img src="/pocetna.jpeg" className="img" />
+      <img
+        src="/pocetna.jpeg"
+        className="img"
+        alt="pocetna-slika"
+        title="pocetna-slika"
+      />
       <h1 className="natpis">Iznajmljivanje kluba</h1>
       <h1 className={`${fugazOne.className} pound`}>P O U N D </h1>
       <PocetnaButton />
