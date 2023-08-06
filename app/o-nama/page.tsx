@@ -8,7 +8,7 @@ export default function page() {
   return (
     <div id="o-nama">
       <Navbar ok="ne" />
-      <Onama />
+      <Onama h2={false} />
       <Slike />
       <Recenzije />
     </div>

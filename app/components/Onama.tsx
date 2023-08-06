@@ -14,7 +14,7 @@ const montserrat = Montserrat({
   subsets: ["latin"],
   weight: ["600", "700"],
 });
-export default function Onama(h2: boolean) {
+export default function Onama({ h2 }: { h2: boolean }) {
   return (
     <div id="o-nama-poc" className={aboshione.className}>
       {h2 ? (
