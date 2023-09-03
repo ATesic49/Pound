@@ -25,7 +25,7 @@ export default function EmailSender() {
   }, []);
   const fetchData = async (urll: string) => {
     try {
-      const res = await axios.post(`${urll}api/contact`, {
+      const res = await axios.post(`/api/contact`, {
         email,
         naslov,
         text,
@@ -35,7 +35,7 @@ export default function EmailSender() {
         date,
       });
       if (res.data.status === "success") {
-        return toast("USPEH");
+        return toast("Uspesno ste poslali Email!");
       } else {
         return console.log("fail");
       }
