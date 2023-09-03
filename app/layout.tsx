@@ -1,11 +1,11 @@
-import { Kablammo } from "@next/font/google";
+import { Aoboshi_One, Kablammo } from "next/font/google";
 import "../public/global.css";
 import Footer from "./components/Footer";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import VIber from "./components/Viber";
 const name = ["Andrija Arsenijevic"];
-const cairo = Kablammo({
+const AoboshiOne =Aoboshi_One({
   subsets: ["latin"],
   weight: ["400"],
 });
@@ -24,10 +24,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
         <link rel="icon" type="image/x-icon" href="/logo.svg" />
       </head>
-      <body>
+      <body className={AoboshiOne.className}>
         {children}
         <VIber />
         <Footer />

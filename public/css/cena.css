@@ -3,6 +3,10 @@
   min-height: 50svh;
   width: 100%;
 }
+.tip-proslave{
+  text-align: center;
+  font-size: var(--font-size-Xlarge);
+}
 #cena-poc .h1 {
   padding: 2.5vw 0;
   position: relative;

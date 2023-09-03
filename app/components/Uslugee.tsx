@@ -1,14 +1,8 @@
 import React from "react";
-import { Aoboshi_One, Nunito, Montserrat } from "@next/font/google";
+import {  Montserrat } from "next/font/google";
 import Link from "next/link";
-const aboshione = Aoboshi_One({
-  weight: ["400"],
-  subsets: ["latin"],
-});
-const nunito = Nunito({
-  subsets: ["latin"],
-  weight: ["700"],
-});
+
+
 const montserrat = Montserrat({
   subsets: ["latin"],
   weight: ["600", "700"],
@@ -16,14 +10,14 @@ const montserrat = Montserrat({
 export default function Uslugee({ h2 }: { h2: boolean }) {
   return (
     <>
-      <div id="uslugeeh1" className={aboshione.className}>
+      <div id="uslugeeh1">
         {h2 ? (
-          <h2>~ &nbsp;&nbsp;Tip Proslave &nbsp;&nbsp;~</h2>
+          <h2 className="tip-proslave">~ &nbsp;&nbsp;Tip Proslave &nbsp;&nbsp;~</h2>
         ) : (
-          <h1>~ &nbsp;&nbsp;Tip Proslave &nbsp;&nbsp;~</h1>
+          <h1 >~ &nbsp;&nbsp;Tip Proslave &nbsp;&nbsp;~</h1>
         )}
       </div>
-      <div id="uslugee" className={aboshione.className}>
+      <div id="uslugee">
         <Link href="/usluge/punoletstvo">
           <img
             src="/svgs/osamnestii.svg"

@@ -2,25 +2,9 @@
 import React, { useEffect, useState } from "react";
 import validator from "validator";
 import axios from "axios";
-import { Aoboshi_One, Montserrat, Nunito, Cairo } from "@next/font/google";
 import { toast, ToastContainer } from "react-toastify";
 import { usePathname, useRouter } from "next/navigation";
-const cairo = Cairo({
-  weight: ["400"],
-  subsets: ["latin"],
-});
-const aboshione = Aoboshi_One({
-  weight: ["400"],
-  subsets: ["latin"],
-});
-const nunito = Nunito({
-  subsets: ["latin"],
-  weight: ["700"],
-});
-const montserrat = Montserrat({
-  subsets: ["latin"],
-  weight: ["600", "700"],
-});
+
 export default function EmailSender() {
   const [ime, SetIme] = useState("");
   const [text, SetText] = useState("");
@@ -73,7 +57,8 @@ export default function EmailSender() {
         pauseOnHover={false}
         theme="colored"
       />
-      <div id="email" className={aboshione.className}>
+      <div id="email" 
+      >
         <div className="h2">
           <h2>
             Pošalji nam <span>Email</span>
@@ -89,7 +74,6 @@ export default function EmailSender() {
                 <input
                   name="ime"
                   type="text"
-                  className={montserrat.className}
                   placeholder="Petar"
                   onChange={(e) => {
                     return input(e, SetIme);
@@ -104,7 +88,6 @@ export default function EmailSender() {
                 <input
                   name="naslov"
                   type="text"
-                  className={montserrat.className}
                   placeholder="Iznajmljjivanje kluba"
                   onChange={(e) => {
                     return input(e, SetNaslov);
@@ -119,7 +102,6 @@ export default function EmailSender() {
                 <input
                   name="email"
                   type="text"
-                  className={montserrat.className}
                   placeholder="petar.petrovic@gmail.com"
                   onChange={(e) => {
                     return input(e, SetEmail);
@@ -136,7 +118,6 @@ export default function EmailSender() {
                   name="datum"
                   type="date"
                   placeholder="2024-01-01"
-                  className={montserrat.className}
                   onChange={(e) => {
                     console.log(e.target.value);
                     return input(e, SetDate);
@@ -150,7 +131,6 @@ export default function EmailSender() {
                 </div>
                 <select
                   name="proslava"
-                  className={montserrat.className}
                   onChange={(e) => {
                     return select(e, SetTip);
                   }}
@@ -168,7 +148,6 @@ export default function EmailSender() {
                   <h3>Text:</h3>
                 </div>
                 <textarea
-                  className={montserrat.className}
                   placeholder="Dobar dan,želeo bih da ..."
                   onChange={(e) => {
                     return textArea(e, SetText);
@@ -186,7 +165,6 @@ export default function EmailSender() {
                   type="number"
                   min={1}
                   max={60}
-                  className={montserrat.className}
                   onChange={(e) => {
                     return input(e, SetBroj);
                   }}
@@ -196,7 +174,6 @@ export default function EmailSender() {
           </form>
 
           <button
-            className={montserrat.className}
             onClick={(e) => {
               if (typeof broj !== "number") {
                 e.preventDefault();

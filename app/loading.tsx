@@ -1,5 +1,5 @@
-import { Lobster } from "@next/font/google";
-import { Fugaz_One } from "@next/font/google";
+import { Lobster } from "next/font/google";
+import { Fugaz_One } from "next/font/google";
 const lobster = Lobster({
   subsets: ["latin"],
   weight: ["400"],

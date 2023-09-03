@@ -1,20 +1,9 @@
 "use client";
-import { Aoboshi_One, Montserrat, Nunito, Cairo } from "@next/font/google";
+import { Aoboshi_One, Montserrat, Nunito, Cairo } from "next/font/google";
 import React from "react";
 import Navbar from "../components/Navbar";
 
-const cairo = Cairo({
-  weight: ["400"],
-  subsets: ["latin"],
-});
-const aboshione = Aoboshi_One({
-  weight: ["400"],
-  subsets: ["latin"],
-});
-const nunito = Nunito({
-  subsets: ["latin"],
-  weight: ["700"],
-});
+
 const montserrat = Montserrat({
   subsets: ["latin"],
   weight: ["600", "700"],
@@ -23,7 +12,7 @@ export default function Swiperr() {
   return (
     <>
       <Navbar ok="ne" />;
-      <div id="karta" className={aboshione.className}>
+      <div id="karta" >
         <div className="h1">
           <h1>Karta Pića</h1>
           <p className="podnaslov">

@@ -1,25 +1,13 @@
-import { Aoboshi_One, Montserrat, Nunito, Cairo } from "@next/font/google";
 import Link from "next/link";
 import React from "react";
-const cairo = Cairo({
-  weight: ["400"],
-  subsets: ["latin"],
-});
-const aboshione = Aoboshi_One({
-  weight: ["400"],
-  subsets: ["latin"],
-});
-const nunito = Nunito({
-  subsets: ["latin"],
-  weight: ["700"],
-});
+import { Montserrat } from "next/font/google";
 const montserrat = Montserrat({
-  subsets: ["latin"],
-  weight: ["600", "700"],
-});
+  weight:['400','500'],
+  subsets:['latin']
+})
 export default function Usluge() {
   return (
-    <div id="usluge-poc" className={aboshione.className}>
+    <div id="usluge-poc">
       <div className="h1">
         <h1>
           Sve <span className={montserrat.className}>š</span>to ti treba na
@@ -48,7 +36,7 @@ export default function Usluge() {
         <div className="swiper">
           {/* <div className="holder"><img src="/party.svg" alt="" /></div> */}
         </div>
-        <div className={`dugme ${cairo.className}`}>
+        <div className={`dugme `}>
           <Link href="/usluge" className="link">
             Detaljnije
           </Link>
@@ -84,7 +72,7 @@ export default function Usluge() {
           {/* <img src="/reunion.svg" alt="" /> */}
           {/* </div> */}
         </div>
-        <div className={`dugme ${cairo.className}`}>
+        <div className={`dugme `}>
           <Link href="/usluge" className="link">
             Detaljnije
           </Link>
@@ -117,7 +105,7 @@ export default function Usluge() {
           {/* <img src="/beba.svg" alt="" /> */}
           {/* </div> */}
         </div>
-        <div className={`dugme ${cairo.className}`}>
+        <div className={`dugme`}>
           <Link href="/usluge" className="link">
             Detaljnije
           </Link>
@@ -187,7 +175,7 @@ export default function Usluge() {
           {/* <img src="/korporativna.svg" alt="" /> */}
           {/* </div> */}
         </div>
-        <div className={`dugme ${cairo.className}`}>
+        <div className={`dugme`}>
           <Link href="/usluge" className="link">
             Detaljnije
           </Link>

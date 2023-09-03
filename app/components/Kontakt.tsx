@@ -1,20 +1,11 @@
 import React from "react";
 import EmailSender from "./EmailSender";
-import { Aoboshi_One, Montserrat } from "@next/font/google";
 import Link from "next/link";
 
-const aboshione = Aoboshi_One({
-  weight: ["400"],
-  subsets: ["latin"],
-});
 
-const montserrat = Montserrat({
-  subsets: ["latin"],
-  weight: ["600", "700"],
-});
 export default function Kontakt({ h2 }: { h2: boolean }) {
   return (
-    <div id="kontakt-poc" className={montserrat.className}>
+    <div id="kontakt-poc" >
       <div className="h1">{h2 ? <h2>Kontakt</h2> : <h1>Kontakt</h1>}</div>
       <div className={`p `}>
         <p>
@@ -38,7 +29,7 @@ export default function Kontakt({ h2 }: { h2: boolean }) {
         </p>
       </div>
       <EmailSender />
-      <div id="pozovi" className={aboshione.className}>
+      <div id="pozovi" >
         <div className="h2">
           <h2>
             <span> Pozovi </span> Nas
@@ -68,7 +59,7 @@ export default function Kontakt({ h2 }: { h2: boolean }) {
           </div>
         </div>
       </div>
-      <div id="lokacija" className={aboshione.className}>
+      <div id="lokacija" >
         <div className="h2">
           <h2>
             <span> Pronadji </span> Nas

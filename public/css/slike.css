@@ -100,7 +100,7 @@
   left: -50%;
   transform: translate(-50%, -50%);
   z-index: 5;
-  font-size: var(--font-size-large) !important;
+  font-size: var(--font-size-mid) !important;
 }
 #slike .ispod .img:hover h3 {
   animation: udesno 0.4s 0.05s ease-in forwards;

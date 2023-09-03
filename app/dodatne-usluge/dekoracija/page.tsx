@@ -1,19 +1,12 @@
 import Navbar from "@/app/components/Navbar";
-import { Aoboshi_One, Montserrat } from "@next/font/google";
+import {Montserrat } from "next/font/google";
 import Link from "next/link";
 import React from "react";
 import "../../../public/css/dodatne-usluge.css";
-const aoboshione = Aoboshi_One({
-  weight: ["400"],
-  subsets: ["latin"],
-});
-const montserrat = Montserrat({
-  subsets: ["latin"],
-  weight: ["600", "700"],
-});
+
 export default function page() {
   return (
-    <div className={`${aoboshione.className} dusluge`}>
+    <div className={` dusluge`}>
       <Navbar ok="ne" />
       <div className="container decor">
         <h1>Dekoracija</h1>

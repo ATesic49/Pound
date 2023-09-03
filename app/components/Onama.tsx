@@ -1,22 +1,14 @@
 import React from "react";
-import { Aoboshi_One, Nunito, Montserrat } from "@next/font/google";
 import Image from "next/image";
 import Link from "next/link";
-const aboshione = Aoboshi_One({
-  weight: ["400"],
-  subsets: ["latin"],
-});
-const nunito = Nunito({
-  subsets: ["latin"],
-  weight: ["700"],
-});
+import { Montserrat } from "next/font/google";
 const montserrat = Montserrat({
-  subsets: ["latin"],
-  weight: ["600", "700"],
-});
+  weight:['400','500'],
+  subsets:['latin']
+})
 export default function Onama({ h2 }: { h2: boolean }) {
   return (
-    <div id="o-nama-poc" className={aboshione.className}>
+    <div id="o-nama-poc" >
       {h2 ? (
         <h2>Najuzbudljiviji provod u Beogradu</h2>
       ) : (
@@ -24,7 +16,7 @@ export default function Onama({ h2 }: { h2: boolean }) {
       )}
       <div className="ispod">
         <div className="p">
-          <p className={montserrat.className}>
+          <p >
             {/* Dobrodo<span className={montserrat.className}>š</span>li u klub
             Pound - najidealnije mesto za organizaciju Va
             <span className={montserrat.className}>š</span>eg doga
